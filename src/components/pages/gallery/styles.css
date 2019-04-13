@@ -1,0 +1,10 @@
+#wrapper {
+    margin: 5rem auto;
+    width: 50rem;
+
+}
+
+.gallery :hover{
+   width: +110%;
+
+}

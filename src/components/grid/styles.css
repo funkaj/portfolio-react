@@ -1,0 +1,14 @@
+a { 
+	text-decoration: 'none';
+}
+
+.project-icon .fas, .fab{
+	color: white;
+	opacity: 0.5;
+	filter: alpha(opactity=40);
+}
+
+.project-icon :hover {
+	opacity: 1;
+	filter: alpha(opacity=100);
+}

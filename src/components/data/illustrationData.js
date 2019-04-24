@@ -23,4 +23,28 @@ export const illustrationData = [
 		author: 'Adam, Evan',
 		featured: true,
 	},
+	{
+		img: 'images/Sub-Zero.png',
+		title: 'Sub Zero',
+		author: 'Adam Funk',
+		featured: false,
+	},
+	{
+		img: 'images/girlcolor1.jpg',
+		title: 'Watercolor',
+		author: 'Adam Funk',
+		featured: false,
+	},
+	{
+		img: 'images/riddle1.jpg',
+		title: 'The Riddler',
+		author: 'Adam',
+		featured: true,
+	},
+	{
+		img: 'images/kimono1.jpg',
+		title: 'Kimono',
+		author: 'Adam',
+		featured: true,
+	},
 ];

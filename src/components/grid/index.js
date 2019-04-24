@@ -5,7 +5,7 @@ import GridList from '@material-ui/core/GridList';
 import GridListTile from '@material-ui/core/GridListTile';
 import GridListTileBar from '@material-ui/core/GridListTileBar';
 import IconButton from '@material-ui/core/IconButton';
-import StarBorderIcon from '@material-ui/icons/StarBorder';
+import './styles.css'
 
 const styles = theme => ({
 	root: {
@@ -32,6 +32,7 @@ const styles = theme => ({
 function AdvancedGridList(props) {
 	const { classes } = props;
 	const tileData = props.tileData;
+	console.log(props)
 
 	return (
 		<div className={classes.root}>
@@ -45,13 +46,21 @@ function AdvancedGridList(props) {
 						<img src={tile.img} alt={tile.title} />
 						<GridListTileBar
 							title={tile.title}
-							titlePosition='top'
+							titlePosition='bottom'
 							actionIcon={
-								<IconButton className={classes.icon}>
-									<StarBorderIcon />
-								</IconButton>
+								
+								<div>
+									{props.load ? (<div>
+										<IconButton className={classes.icon}>
+										<a className='project-icon' href={tile.liveSite} target='blank'><i className="fas fa-external-link-alt"></i></a>
+										</IconButton>
+										<IconButton className={classes.icon}>
+											<a className='project-icon' href={tile.github} target='blank'><i className='fab fa-github-square'/></a>
+										</IconButton>
+									</div>) : (<div></div>)}
+								</div>
 							}
-							actionPosition='left'
+							actionPosition='right'
 							className={classes.titleBar}
 						/>
 					</GridListTile>

@@ -5,7 +5,8 @@ import GridList from '@material-ui/core/GridList';
 import GridListTile from '@material-ui/core/GridListTile';
 import GridListTileBar from '@material-ui/core/GridListTileBar';
 import IconButton from '@material-ui/core/IconButton';
-import StarBorderIcon from '@material-ui/icons/StarBorder';
+import './styles.css';
+import Icon from '@material-ui/core/Icon';
 
 const styles = theme => ({
 	root: {
@@ -44,12 +45,31 @@ function AdvancedGridList(props) {
 						rows={tile.featured ? 2 : 1}>
 						<img src={tile.img} alt={tile.title} />
 						<GridListTileBar
-							title={tile.title}
+							title={tile.art ? tile.title : null}
 							titlePosition='top'
 							actionIcon={
-								<IconButton className={classes.icon}>
-									<StarBorderIcon />
-								</IconButton>
+								<div>
+									{tile.art ? (
+										<Icon />
+									) : (
+										<div>
+											<IconButton
+												id='link-btn'
+												href={tile.live}
+												target='blank'
+												className={classes.icon}>
+												{tile.title}
+											</IconButton>
+											<IconButton
+												id='link-btn'
+												href={tile.github}
+												target='blank'
+												className={classes.icon}>
+												<i class='fab fa-github-alt fa-lg' />
+											</IconButton>
+										</div>
+									)}
+								</div>
 							}
 							actionPosition='left'
 							className={classes.titleBar}

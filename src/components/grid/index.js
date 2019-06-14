@@ -33,6 +33,7 @@ const styles = theme => ({
 function AdvancedGridList(props) {
 	const { classes } = props;
 	const tileData = props.tileData;
+	console.log(props);
 
 	return (
 		<div className={classes.root}>
@@ -71,7 +72,7 @@ function AdvancedGridList(props) {
 									)}
 								</div>
 							}
-							actionPosition='left'
+							actionPosition='right'
 							className={classes.titleBar}
 						/>
 					</GridListTile>

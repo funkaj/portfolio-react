@@ -42,7 +42,7 @@ class Gallery extends Component {
 				/>
 				<div id='wrapper'>
 					<Paper>
-						<AdvancedGridList tileData={state.data} />
+						<AdvancedGridList tileData={state.data} load={state.load}/>
 					</Paper>
 				</div>
 			</div>

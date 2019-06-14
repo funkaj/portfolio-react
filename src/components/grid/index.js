@@ -6,7 +6,6 @@ import GridListTile from '@material-ui/core/GridListTile';
 import GridListTileBar from '@material-ui/core/GridListTileBar';
 import IconButton from '@material-ui/core/IconButton';
 import './styles.css';
-import Icon from '@material-ui/core/Icon';
 
 const styles = theme => ({
 	root: {
@@ -51,7 +50,7 @@ function AdvancedGridList(props) {
 							actionIcon={
 								<div>
 									{tile.art ? (
-										<Icon />
+										<IconButton />
 									) : (
 										<div>
 											<IconButton
@@ -72,7 +71,7 @@ function AdvancedGridList(props) {
 									)}
 								</div>
 							}
-							actionPosition='right'
+							actionPosition='left'
 							className={classes.titleBar}
 						/>
 					</GridListTile>

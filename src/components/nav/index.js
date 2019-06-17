@@ -5,7 +5,7 @@ import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
 import Button from '@material-ui/core/Button';
-import './styles.css'
+import './styles.css';
 //import IconButton from '@material-ui/core/IconButton';
 //import MenuIcon from '@material-ui/icons/Menu';
 
@@ -24,11 +24,12 @@ const styles = {
 
 function ButtonAppBar(props) {
 	const { classes } = props;
+	// eslint-disable-next-line no-unused-vars
 	const load = props.load;
-	console.log(load);
+
 	return (
 		<div className={classes.root}>
-			<AppBar id='navBar' position='static' >
+			<AppBar id='navBar' position='static'>
 				<Toolbar>
 					<Typography variant='h5' className={classes.grow}>
 						Adam Funk

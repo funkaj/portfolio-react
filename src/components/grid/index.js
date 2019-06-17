@@ -32,7 +32,9 @@ const styles = theme => ({
 function AdvancedGridList(props) {
 	const { classes } = props;
 	const tileData = props.tileData;
+	console.log('============================');
 	console.log(props);
+	console.log('============================');
 
 	return (
 		<div className={classes.root}>
@@ -43,7 +45,11 @@ function AdvancedGridList(props) {
 						key={tile.img}
 						cols={tile.featured ? 2 : 1}
 						rows={tile.featured ? 2 : 1}>
-						<img src={tile.img} alt={tile.title} />
+						<img
+							src={props.hasWebP ? tile.img : tile.imgalt}
+							alt={tile.title}
+						/>
+
 						<GridListTileBar
 							title={tile.art ? tile.title : null}
 							titlePosition='top'
@@ -65,7 +71,7 @@ function AdvancedGridList(props) {
 												href={tile.github}
 												target='blank'
 												className={classes.icon}>
-												<i class='fab fa-github-alt fa-lg' />
+												<i className='fab fa-github-alt fa-lg' />
 											</IconButton>
 										</div>
 									)}

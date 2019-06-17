@@ -9,9 +9,29 @@ import './styles.css';
 
 class Gallery extends Component {
 	state = {
+		hasWebP: false,
 		load: true,
 		data: devData,
 	};
+
+	async componentDidMount() {
+		const state = this.state;
+		//to see if feature is availible in browser
+		// eslint-disable-next-line no-unused-vars
+		function checkImg() {
+			let img = new Image();
+			img.onload = function() {
+				state.hasWebP = true;
+				console.log(state);
+			};
+			img.onerror = function() {
+				state.hasWebP = false;
+				console.log(state);
+			};
+			img.src = 'http://www.gstatic.com/webp/gallery/1.webp';
+		}
+		await checkImg();
+	}
 
 	handleSwitchData = e => {
 		const state = this.state;
@@ -42,7 +62,11 @@ class Gallery extends Component {
 				/>
 				<div id='wrapper'>
 					<Paper>
-						<AdvancedGridList tileData={state.data} load={state.load}/>
+						<AdvancedGridList
+							hasWebP={state.hasWebP}
+							tileData={state.data}
+							load={state.load}
+						/>
 					</Paper>
 				</div>
 			</div>

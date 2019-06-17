@@ -1,6 +1,7 @@
 export const devData = [
 	{
-		img: './images/sdth1.jpg',
+		img: './images/sdth1.webp',
+		imgalt: './images/sdth1.jpg',
 		title: 'San Diego Tech Hub',
 		author: 'SDTH',
 		github: 'https://github.com/san-diego-tech-hub/sdth-site',
@@ -11,6 +12,7 @@ export const devData = [
 	},
 	{
 		img: './images/jobpiper.gif',
+		imgalt: './images/jobpiper.gif',
 		title: 'Job Piper',
 		author: 'Adam Funk, Jesse Loftus, Jordon, Silver, Phillip',
 		github: 'https://github.com/ScriptKiddie1337/JobPiper.io',
@@ -20,7 +22,8 @@ export const devData = [
 		featured: false,
 	},
 	{
-		img: './images/crystalGame.png',
+		img: './images/crystalGame.webp',
+		imgalt: './images/crystalGame.png',
 		title: 'Crystal Madness',
 		author: 'Adam Funk',
 		github: 'https://github.com/funkaj/Crystal-Madness',
@@ -30,7 +33,8 @@ export const devData = [
 		featured: false,
 	},
 	{
-		img: './images/chef-hands-steak-plate1.jpg',
+		img: './images/plate1.webp',
+		imgalt: './images/chef-hands-steak-plate1.jpg',
 		title: 'Dynamite Kitchen Supplies',
 		author: 'Adam, Jesse',
 		github: 'https://github.com/funkaj/Dynamite-Kitchen-Supplies',
@@ -41,6 +45,7 @@ export const devData = [
 	},
 	{
 		img: './images/raccoon-demo.gif',
+		imgalt: './images/raccoon-demo.gif',
 		title: 'Raccoon Fighter!',
 		github: 'https://github.com/funkaj/Raccoon-Fighter',
 		live: 'https://github.com/funkaj/Raccoon-Fighter',
@@ -49,6 +54,7 @@ export const devData = [
 
 	{
 		img: './images/gifapalooza.png',
+		imgalt: './images/gifapalooza.png',
 		title: 'Gifapalooza',
 		github: 'https://github.com/funkaj/Gifapalooza',
 		live: 'https://funkaj.github.io/Gifapalooza/',
@@ -56,7 +62,8 @@ export const devData = [
 			'Web page that searches the Giphy API for user queryed gif. Built for practice using API in web development.',
 	},
 	{
-		img: './images/friend_finder01.png',
+		img: './images/friend_finder01.webp',
+		imgalt: './images/friend_finder01.png',
 		title: 'Friend Finder',
 		github: 'https://github.com/funkaj/FriendFinder',
 		live: 'https://blooming-anchorage-67787.herokuapp.com/',
@@ -66,6 +73,7 @@ export const devData = [
 	},
 	{
 		img: './images/liri-node-app.png',
+		imgalt: './images/liri-node-app.png',
 		title: 'Liri-app',
 		github: 'https://github.com/funkaj/liri-node-app',
 		live: 'https://github.com/funkaj/liri-node-app',
@@ -74,6 +82,7 @@ export const devData = [
 	},
 	{
 		img: './images/trainschedule.png',
+		imgalt: './images/trainschedule.png',
 		title: 'Train-Scheduler',
 		github: 'https://github.com/funkaj/Train-scheduler',
 		live: 'https://funkaj.github.io/Train-scheduler/',
@@ -81,7 +90,8 @@ export const devData = [
 			'Web page that allows user to add trains to table. stores user input in firebase. Built for practice using Firebase.google in web development.',
 	},
 	{
-		img: './images/destinator.png',
+		img: './images/destinator.webp',
+		imgalt: './images/destinator.png',
 		title: 'The-Destinator',
 		github: 'https://github.com/funkaj/TheDestinator',
 		live: 'https://loftusjl.github.io/TheDestinator/',

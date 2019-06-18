@@ -32,9 +32,6 @@ const styles = theme => ({
 function AdvancedGridList(props) {
 	const { classes } = props;
 	const tileData = props.tileData;
-	console.log('============================');
-	console.log(props);
-	console.log('============================');
 
 	return (
 		<div className={classes.root}>

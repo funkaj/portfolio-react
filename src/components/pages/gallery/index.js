@@ -22,11 +22,9 @@ class Gallery extends Component {
 			let img = new Image();
 			img.onload = function() {
 				state.hasWebP = true;
-				console.log(state);
 			};
 			img.onerror = function() {
 				state.hasWebP = false;
-				console.log(state);
 			};
 			img.src = 'http://www.gstatic.com/webp/gallery/1.webp';
 		}

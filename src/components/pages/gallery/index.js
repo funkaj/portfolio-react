@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Paper from '@material-ui/core/Paper';
+import Animation from '../../animation';
 import ButtonAppBar from '../../nav';
 import AdvancedGridList from '../../grid';
 import LazyLoad from 'react-lazy-load';
@@ -68,6 +68,7 @@ class Gallery extends Component {
 							load={state.load}
 						/>
 					</LazyLoad>
+					<Animation />
 				</div>
 			</div>
 		);

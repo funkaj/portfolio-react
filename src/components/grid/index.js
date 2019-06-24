@@ -1,6 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { compose } from 'redux';
 import { withStyles } from '@material-ui/core/styles';
+import withWidth, { isWidthDown } from '@material-ui/core/withWidth';
 import GridList from '@material-ui/core/GridList';
 import GridListTile from '@material-ui/core/GridListTile';
 import GridListTileBar from '@material-ui/core/GridListTileBar';
@@ -33,12 +35,27 @@ function AdvancedGridList(props) {
 	const { classes } = props;
 	const tileData = props.tileData;
 
+	const columns = () => {
+		if (isWidthDown('xs', props.width)) {
+			return 1;
+		}
+
+		if (isWidthDown('sm', props.width)) {
+			return 2;
+		}
+		if (isWidthDown('md', props.width)) {
+			return 3;
+		}
+
+		return 3;
+	};
+
 	return (
-		<div className={classes.root}>
+		<div className={`grid-bg ${classes.root}`}>
 			<GridList
 				cellHeight={250}
-				cols={3}
-				spacing={3}
+				cols={columns()}
+				spacing={10}
 				className={`${classes.gridList} griddy`}>
 				{tileData.map(tile => (
 					<GridListTile
@@ -92,4 +109,7 @@ AdvancedGridList.propTypes = {
 	classes: PropTypes.object.isRequired,
 };
 
-export default withStyles(styles)(AdvancedGridList);
+export default compose(
+	withStyles(styles),
+	withWidth()
+)(AdvancedGridList);

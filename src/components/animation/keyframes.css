@@ -15,7 +15,7 @@
 	}
 
 	to {
-		height: 90vh;
+		height: 93vh;
 	}
 }
 /* keyframs for left 3 lines */
@@ -25,7 +25,7 @@
 	}
 
 	to {
-		height: 85vh;
+		height: 91vh;
 	}
 }
 @keyframes leftCenterLine {
@@ -34,7 +34,7 @@
 	}
 
 	to {
-		height: 80vh;
+		height: 89vh;
 	}
 }
 @keyframes leftOutsideLine {
@@ -43,7 +43,7 @@
 	}
 
 	to {
-		height: 75vh;
+		height: 87vh;
 	}
 }
 /* keyframs for left 3 lines */
@@ -53,7 +53,7 @@
 	}
 
 	to {
-		height: 85vh;
+		height: 91vh;
 	}
 }
 
@@ -63,7 +63,7 @@
 	}
 
 	to {
-		height: 80vh;
+		height: 89vh;
 	}
 }
 
@@ -73,6 +73,6 @@
 	}
 
 	to {
-		height: 75vh;
+		height: 87vh;
 	}
 }

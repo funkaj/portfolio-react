@@ -2,10 +2,15 @@
     font-size: 1rem;
 }
 
+.grid-bg {
+    background-color: transparent !important;
+}
+
 .gallery {
-    margin: 0px;
-    /* border: red 2px solid; */
+    width: 400px;
+    height: 250px;
+    list-style: none;
+    padding: 15px;
 }
-.griddy {
-    background-color: rgb(187, 187, 187);
-}
+
+

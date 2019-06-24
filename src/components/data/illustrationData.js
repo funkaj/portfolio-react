@@ -36,6 +36,7 @@ export const illustrationData = [
 		imgalt: 'images/png/Sub-Zero.png',
 		title: 'Sub Zero',
 		author: 'Adam Funk',
+		art: true,
 		featured: false,
 	},
 	{
@@ -43,6 +44,7 @@ export const illustrationData = [
 		imgalt: 'images/png/girlcolor1.png',
 		title: 'Watercolor',
 		author: 'Adam Funk',
+		art: true,
 		featured: false,
 	},
 	{
@@ -50,6 +52,7 @@ export const illustrationData = [
 		imgalt: 'images/png/riddle1.png',
 		title: 'The Riddler',
 		author: 'Adam',
+		art: true,
 		featured: false,
 	},
 	{
@@ -57,6 +60,7 @@ export const illustrationData = [
 		imgalt: 'images/png/kimono1.png',
 		title: 'Kimono',
 		author: 'Adam',
+		art: true,
 		featured: false,
 	},
 ];

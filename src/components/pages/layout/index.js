@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { devData } from '../../data/devData';
 import { linkData } from '../../data/links';
 import { illustrationData } from '../../data/illustrationData';
-import { DEV_DATA, ILL_DATA } from '../../constants/constants';
+import { DEV_DATA, ILL_DATA, HOME } from '../../constants/constants';
 import ButtonAppBar from '../../nav';
 import Gallery from '../gallery';
 import MyIcon from '../../icon/icons';
@@ -11,8 +11,8 @@ import './styles.css';
 class Layout extends Component {
 	state = {
 		hasWebP: false,
-		load: true,
-		data: devData,
+		load: false,
+		data: '',
 		linkData,
 	};
 
@@ -45,7 +45,11 @@ class Layout extends Component {
 				this.setState({ load: false });
 				this.setState({ data: illustrationData });
 				return state;
-
+			case HOME:
+				this.setState({ load: false });
+				this.setState({ load: false });
+				this.setState({ data: '' });
+				return state;
 			default:
 				return state;
 		}
@@ -64,7 +68,11 @@ class Layout extends Component {
 					<MyIcon linkData={state.linkData[1]} />
 					<MyIcon linkData={state.linkData[2]} target='_top' />
 				</div>
-				<Gallery data={state} />
+				{!state.load && !state.data ? (
+					<div id='mainImg' />
+				) : (
+					<Gallery data={state} />
+				)}
 			</div>
 		);
 	}

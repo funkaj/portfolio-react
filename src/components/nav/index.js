@@ -35,6 +35,9 @@ function ButtonAppBar(props) {
 						Adam Funk
 					</Typography>
 					<Button onClick={props.handleSwitchData}>
+						<span className='HOME'>Home</span>
+					</Button>
+					<Button onClick={props.handleSwitchData}>
 						<span className='ILL_DATA'>Illustration</span>
 					</Button>
 					<Button onClick={props.handleSwitchData}>

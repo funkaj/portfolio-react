@@ -1,4 +1,6 @@
-
+body {
+    background-image: url('/public/images/png/ninja1.png')
+}
 #icon-container {
     position: absolute;
     width:50px;

@@ -35,7 +35,11 @@ function AdvancedGridList(props) {
 
 	return (
 		<div className={classes.root}>
-			<GridList cellHeight={200} spacing={1} className={classes.gridList}>
+			<GridList
+				cellHeight={250}
+				cols={3}
+				spacing={3}
+				className={`${classes.gridList} griddy`}>
 				{tileData.map(tile => (
 					<GridListTile
 						className='gallery'
@@ -43,7 +47,7 @@ function AdvancedGridList(props) {
 						cols={tile.featured ? 2 : 1}
 						rows={tile.featured ? 2 : 1}>
 						<img
-							src={props.hasWebP ? tile.img : tile.imgalt}
+							src={props.hasWebP ? tile.imgalt : tile.img}
 							alt={tile.title}
 						/>
 

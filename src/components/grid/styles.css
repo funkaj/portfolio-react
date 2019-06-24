@@ -2,3 +2,10 @@
     font-size: 1rem;
 }
 
+.gallery {
+    margin: 0px;
+    /* border: red 2px solid; */
+}
+.griddy {
+    background-color: rgb(187, 187, 187);
+}

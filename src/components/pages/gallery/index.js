@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import Paper from '@material-ui/core/Paper';
 import ButtonAppBar from '../../nav';
 import AdvancedGridList from '../../grid';
+import LazyLoad from 'react-lazy-load';
 import { devData } from '../../data/devData';
 import { illustrationData } from '../../data/illustrationData';
 import { DEV_DATA, ILL_DATA } from '../../constants/constants';
@@ -34,6 +35,7 @@ class Gallery extends Component {
 	handleSwitchData = e => {
 		const state = this.state;
 
+		console.log(state.hasWebP);
 		switch (e.target.className) {
 			case DEV_DATA:
 				this.setState({ load: true });
@@ -59,13 +61,13 @@ class Gallery extends Component {
 					load={state.load}
 				/>
 				<div id='wrapper'>
-					<Paper>
+					<LazyLoad>
 						<AdvancedGridList
 							hasWebP={state.hasWebP}
 							tileData={state.data}
 							load={state.load}
 						/>
-					</Paper>
+					</LazyLoad>
 				</div>
 			</div>
 		);

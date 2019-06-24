@@ -1,0 +1,78 @@
+/* keyframs for center 3 lines */
+@keyframes centerLine {
+	from {
+		height: 0vh;
+	}
+
+	to {
+		height: 95vh;
+	}
+}
+
+@keyframes outsideLine {
+	from {
+		height: 0vh;
+	}
+
+	to {
+		height: 90vh;
+	}
+}
+/* keyframs for left 3 lines */
+@keyframes leftInsideLine {
+	from {
+		height: 0vh;
+	}
+
+	to {
+		height: 85vh;
+	}
+}
+@keyframes leftCenterLine {
+	from {
+		height: 0vh;
+	}
+
+	to {
+		height: 80vh;
+	}
+}
+@keyframes leftOutsideLine {
+	from {
+		height: 0vh;
+	}
+
+	to {
+		height: 75vh;
+	}
+}
+/* keyframs for left 3 lines */
+@keyframes rightInsideLine {
+	from {
+		height: 0vh;
+	}
+
+	to {
+		height: 85vh;
+	}
+}
+
+@keyframes rightCenterLine {
+	from {
+		height: 0vh;
+	}
+
+	to {
+		height: 80vh;
+	}
+}
+
+@keyframes rightOutsideLine {
+	from {
+		height: 0vh;
+	}
+
+	to {
+		height: 75vh;
+	}
+}

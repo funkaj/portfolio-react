@@ -7,6 +7,7 @@ import GridList from '@material-ui/core/GridList';
 import GridListTile from '@material-ui/core/GridListTile';
 import GridListTileBar from '@material-ui/core/GridListTileBar';
 import IconButton from '@material-ui/core/IconButton';
+
 import './styles.css';
 
 const styles = theme => ({
@@ -34,7 +35,6 @@ const styles = theme => ({
 function AdvancedGridList(props) {
 	const { classes } = props;
 	const tileData = props.tileData;
-
 	const columns = () => {
 		if (isWidthDown('xs', props.width)) {
 			return 1;
@@ -55,7 +55,7 @@ function AdvancedGridList(props) {
 			<GridList
 				cellHeight={250}
 				cols={columns()}
-				spacing={10}
+				spacing={8}
 				className={`${classes.gridList} griddy`}>
 				{tileData.map(tile => (
 					<GridListTile

@@ -6,7 +6,7 @@ import './style.css';
 function Animation() {
 	return (
 		<div className='absolute'>
-			<Grid container spacing={1}>
+			<Grid container spacing={0}>
 				<Grid item sm={4}>
 					<div id='left-line-container'>
 						<div className='left-left-line line' />

@@ -1,0 +1,27 @@
+#icon-container {
+    position: absolute;
+    width:60px;
+    height: 180px;
+    background-color: rgba(5, 5, 5, 0.274);
+    border-radius: 0px 10px 10px 0px;
+    top: 50vh;
+    z-index: 500;
+}
+
+.github{
+    color: blue;
+}
+
+.linkedIn {
+    color: yellow;
+}
+
+.contact {
+    color: red;
+}
+
+@media only screen and (max-width: 1300px) {
+	#icon-container {
+        display: none;
+    }
+}

@@ -3,41 +3,43 @@ import PropTypes from 'prop-types';
 import { withStyles } from '@material-ui/core/styles';
 import BottomNavigation from '@material-ui/core/BottomNavigation';
 import BottomNavigationAction from '@material-ui/core/BottomNavigationAction';
-import RestoreIcon from '@material-ui/icons/Restore';
-import FavoriteIcon from '@material-ui/icons/Favorite';
-import LocationOnIcon from '@material-ui/icons/LocationOn';
+import MyIcon from '../icon/icons';
+import './styles.css';
 
-const styles = {
-	root: {
-		width: 500,
-	},
-};
+const styles = {};
 
-class Footer extends React.Component {
-	state = {
-		value: 0,
-	};
+function Footer(props) {
+	const { classes } = props;
+	const value = props.value;
 
-	handleChange = (event, value) => {
-		this.setState({ value });
-	};
-
-	render() {
-		const { classes } = this.props;
-		const { value } = this.state;
-
-		return (
-			<BottomNavigation
-				value={value}
-				onChange={this.handleChange}
-				showLabels
-				className={classes.root}>
-				<BottomNavigationAction label='Recents' icon={<RestoreIcon />} />
-				<BottomNavigationAction label='Favorites' icon={<FavoriteIcon />} />
-				<BottomNavigationAction label='Nearby' icon={<LocationOnIcon />} />
-			</BottomNavigation>
-		);
-	}
+	return (
+		<BottomNavigation
+			id='bottom-mobile-nav'
+			value={value}
+			onChange={props.handleLink}
+			showLabels
+			className={classes.root}>
+			<BottomNavigationAction
+				label='Github'
+				icon={<MyIcon id='bottomGithub' linkData={props.linkData[0]} />}
+			/>
+			<BottomNavigationAction
+				label='LinkedIn'
+				icon={<MyIcon id='bottomLinkedIn' linkData={props.linkData[1]} />}
+			/>
+			<BottomNavigationAction
+				label='Email'
+				id='bottomContact'
+				icon={
+					<MyIcon
+						id='bottomContact'
+						linkData={props.linkData[2]}
+						target='_top'
+					/>
+				}
+			/>
+		</BottomNavigation>
+	);
 }
 
 Footer.propTypes = {

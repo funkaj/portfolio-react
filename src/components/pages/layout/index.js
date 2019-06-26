@@ -6,7 +6,8 @@ import { illustrationData } from '../../data/illustrationData';
 import { DEV_DATA, ILL_DATA, HOME } from '../../constants/constants';
 import PrimarySearchAppBar from '../../nav';
 import Gallery from '../gallery';
-import MyIcon from '../../icon/icons';
+import Contact from '../../contactnav';
+import Footer from '../../footer';
 import './styles.css';
 
 // Layout for all components
@@ -17,6 +18,7 @@ class Layout extends Component {
 		load: false,
 		data: '',
 		linkData,
+		value: 0,
 	};
 	async componentDidMount() {
 		const state = this.state;
@@ -34,6 +36,10 @@ class Layout extends Component {
 		}
 		await checkImg();
 	}
+
+	handleLink = (event, value) => {
+		this.setState({ value });
+	};
 
 	handleSwitchData = e => {
 		const state = this.state;
@@ -66,16 +72,17 @@ class Layout extends Component {
 					handleSwitchData={this.handleSwitchData}
 					load={state.load}
 				/>
-				<div id='icon-container'>
-					<MyIcon linkData={state.linkData[0]} />
-					<MyIcon linkData={state.linkData[1]} />
-					<MyIcon linkData={state.linkData[2]} target='_top' />
-				</div>
+				<Contact linkData={state.linkData} />
 				{!state.load && !state.data ? (
 					<div id='mainImg' />
 				) : (
 					<Gallery data={state} />
 				)}
+				<Footer
+					handleLink={this.handleLink}
+					linkData={state.linkData}
+					value={state.value}
+				/>
 			</div>
 		);
 	}

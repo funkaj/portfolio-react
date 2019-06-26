@@ -7,7 +7,21 @@
 	color: rgb(119, 119, 119);
 }
 
+.sectionMobile {
+	display: none;
+	color: black;
+}
 .active{
 	color: rgb(0, 0, 0) !important;
 	font-size: +110%;
+}
+
+@media only screen and (max-width: 1300px) {
+	.sectionDesktop {
+		display: none;
+	}
+
+	.sectionMobile {
+		display: inline-block;	
+	}
 }

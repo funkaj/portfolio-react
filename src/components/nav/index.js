@@ -1,11 +1,15 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
+import IconButton from '@material-ui/core/IconButton';
+import Menu from '@material-ui/core/Menu';
+import MenuItem from '@material-ui/core/MenuItem';
 import PropTypes from 'prop-types';
 import { withStyles } from '@material-ui/core/styles';
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
 import Button from '@material-ui/core/Button';
+import MoreIcon from '@material-ui/icons/MoreVert';
 import './styles.css';
 
 // Nav component
@@ -24,19 +28,29 @@ const styles = {
 
 function ButtonAppBar(props) {
 	const { classes } = props;
-	console.log('==============NAV START==============');
-	console.log(props);
-	console.log('==============NAV END==============');
+	const [anchorEl, setAnchorEl] = React.useState(null);
+
 	// eslint-disable-next-line no-unused-vars
 	const load = props.load;
 
-	return (
-		<div className={classes.root}>
-			<AppBar id='navBar' position='static'>
-				<Toolbar>
-					<Typography variant='h4' className={classes.grow}>
-						Adam Funk
-					</Typography>
+	function handleClick(event) {
+		setAnchorEl(event.currentTarget);
+	}
+
+	function handleClose() {
+		setAnchorEl(null);
+	}
+	const mobileMenuId = 'primary-search-account-menu-mobile';
+	const renderMobileMenu = (
+		<div>
+			{/* mobile start*/}
+			<Menu
+				id={mobileMenuId}
+				anchorEl={anchorEl}
+				keepMounted
+				open={Boolean(anchorEl)}
+				onClose={handleClose}>
+				<MenuItem onClick={handleClose}>
 					<Button>
 						<NavLink
 							exact
@@ -48,6 +62,8 @@ function ButtonAppBar(props) {
 							Home
 						</NavLink>
 					</Button>
+				</MenuItem>
+				<MenuItem onClick={handleClose}>
 					<Button>
 						<NavLink
 							id='illustration'
@@ -58,6 +74,8 @@ function ButtonAppBar(props) {
 							Illustration
 						</NavLink>
 					</Button>
+				</MenuItem>
+				<MenuItem onClick={handleClose}>
 					<Button>
 						<NavLink
 							id='web-development'
@@ -68,6 +86,62 @@ function ButtonAppBar(props) {
 							Web Development
 						</NavLink>
 					</Button>
+				</MenuItem>
+			</Menu>
+			{/* mobile end */}
+		</div>
+	);
+	return (
+		<div className={classes.root}>
+			<AppBar id='navBar' position='static'>
+				<Toolbar>
+					<Typography variant='h4' className={classes.grow}>
+						Adam Funk
+					</Typography>
+					<div className='sectionDesktop'>
+						<Button>
+							<NavLink
+								exact
+								id='home'
+								className='HOME'
+								activeClassName='active'
+								onClick={props.handleSwitchData}
+								to='/'>
+								Home
+							</NavLink>
+						</Button>
+						<Button>
+							<NavLink
+								id='illustration'
+								className='ILL_DATA'
+								activeClassName='active'
+								onClick={props.handleSwitchData}
+								to='/gallery/illustration'>
+								Illustration
+							</NavLink>
+						</Button>
+						<Button>
+							<NavLink
+								id='web-development'
+								className='DEV_DATA'
+								activeClassName='active'
+								onClick={props.handleSwitchData}
+								to='/gallery/web-development'>
+								Web Development
+							</NavLink>
+						</Button>
+					</div>
+					<div className='sectionMobile'>
+						<IconButton
+							aria-label='Show more'
+							aria-controls={mobileMenuId}
+							aria-haspopup='true'
+							onClick={handleClick}
+							color='inherit'>
+							<MoreIcon />
+						</IconButton>
+					</div>
+					{renderMobileMenu}
 				</Toolbar>
 			</AppBar>
 		</div>

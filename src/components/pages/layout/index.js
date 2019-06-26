@@ -4,7 +4,7 @@ import { devData } from '../../data/devData';
 import { linkData } from '../../data/links';
 import { illustrationData } from '../../data/illustrationData';
 import { DEV_DATA, ILL_DATA, HOME } from '../../constants/constants';
-import ButtonAppBar from '../../nav';
+import PrimarySearchAppBar from '../../nav';
 import Gallery from '../gallery';
 import MyIcon from '../../icon/icons';
 import './styles.css';
@@ -62,7 +62,7 @@ class Layout extends Component {
 
 		return (
 			<div>
-				<ButtonAppBar
+				<PrimarySearchAppBar
 					handleSwitchData={this.handleSwitchData}
 					load={state.load}
 				/>

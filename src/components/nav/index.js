@@ -1,4 +1,5 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import { withStyles } from '@material-ui/core/styles';
 import AppBar from '@material-ui/core/AppBar';
@@ -6,9 +7,8 @@ import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
 import Button from '@material-ui/core/Button';
 import './styles.css';
-//import IconButton from '@material-ui/core/IconButton';
-//import MenuIcon from '@material-ui/icons/Menu';
 
+// Nav component
 const styles = {
 	root: {
 		flexGrow: 1,
@@ -24,6 +24,9 @@ const styles = {
 
 function ButtonAppBar(props) {
 	const { classes } = props;
+	console.log('==============NAV START==============');
+	console.log(props);
+	console.log('==============NAV END==============');
 	// eslint-disable-next-line no-unused-vars
 	const load = props.load;
 
@@ -31,17 +34,39 @@ function ButtonAppBar(props) {
 		<div className={classes.root}>
 			<AppBar id='navBar' position='static'>
 				<Toolbar>
-					<Typography variant='h5' className={classes.grow}>
+					<Typography variant='h4' className={classes.grow}>
 						Adam Funk
 					</Typography>
-					<Button onClick={props.handleSwitchData}>
-						<span className='HOME'>Home</span>
+					<Button>
+						<NavLink
+							exact
+							id='home'
+							className='HOME'
+							activeClassName='active'
+							onClick={props.handleSwitchData}
+							to='/'>
+							Home
+						</NavLink>
 					</Button>
-					<Button onClick={props.handleSwitchData}>
-						<span className='ILL_DATA'>Illustration</span>
+					<Button>
+						<NavLink
+							id='illustration'
+							className='ILL_DATA'
+							activeClassName='active'
+							onClick={props.handleSwitchData}
+							to='/gallery/illustration'>
+							Illustration
+						</NavLink>
 					</Button>
-					<Button onClick={props.handleSwitchData}>
-						<span className='DEV_DATA'>Web Development</span>
+					<Button>
+						<NavLink
+							id='web-development'
+							className='DEV_DATA'
+							activeClassName='active'
+							onClick={props.handleSwitchData}
+							to='/gallery/web-development'>
+							Web Development
+						</NavLink>
 					</Button>
 				</Toolbar>
 			</AppBar>

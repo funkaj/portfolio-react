@@ -1,11 +1,10 @@
 import React from 'react';
 import IconButton from '@material-ui/core/IconButton';
 
+// icon component
 function Icon(props) {
 	const link = props.linkData;
 
-	console.log('++++++++++++++++++++++++++++++++++');
-	console.log(link);
 	return (
 		<div>
 			<IconButton id='link-btn' href={link.link} target='blank'>

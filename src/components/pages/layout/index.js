@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+
 import { devData } from '../../data/devData';
 import { linkData } from '../../data/links';
 import { illustrationData } from '../../data/illustrationData';
@@ -8,14 +9,15 @@ import Gallery from '../gallery';
 import MyIcon from '../../icon/icons';
 import './styles.css';
 
+// Layout for all components
 class Layout extends Component {
 	state = {
+		pageLink: '/',
 		hasWebP: false,
 		load: false,
 		data: '',
 		linkData,
 	};
-
 	async componentDidMount() {
 		const state = this.state;
 		//to see if feature is availible in browser
@@ -35,18 +37,18 @@ class Layout extends Component {
 
 	handleSwitchData = e => {
 		const state = this.state;
-
 		switch (e.target.className) {
 			case DEV_DATA:
 				this.setState({ load: true });
+				this.setState({ data: '' });
 				this.setState({ data: devData });
 				return state;
 			case ILL_DATA:
 				this.setState({ load: false });
+				this.setState({ data: '' });
 				this.setState({ data: illustrationData });
 				return state;
 			case HOME:
-				this.setState({ load: false });
 				this.setState({ load: false });
 				this.setState({ data: '' });
 				return state;
@@ -57,6 +59,7 @@ class Layout extends Component {
 
 	render() {
 		const state = this.state;
+
 		return (
 			<div>
 				<ButtonAppBar

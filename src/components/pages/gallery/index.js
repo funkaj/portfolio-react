@@ -5,8 +5,10 @@ import LazyLoad from 'react-lazy-load';
 
 import './styles.css';
 
+// Component to build out the grid for the gallery
 function Gallery(props) {
 	const data = props.data;
+
 	return (
 		<div>
 			<div id='wrapper'>

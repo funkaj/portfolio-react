@@ -3,6 +3,7 @@ import Grid from '@material-ui/core/Grid';
 import './keyframes.css';
 import './style.css';
 
+// animation component for gallery pages
 function Animation() {
 	return (
 		<div className='absolute'>

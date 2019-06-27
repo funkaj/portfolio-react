@@ -1,5 +1,6 @@
 #navBar {
 background-color: rgb(94, 69, 128);
+
 }
 #title {
 	font-family: 'Marcellus SC', serif;
@@ -10,7 +11,7 @@ background-color: rgb(94, 69, 128);
 	font-size: 1rem;
 	color: rgba(248, 255, 241, 0.466);
 }
-ul {
+#primary-search-account-menu-mobile > div > ul {
 	
 	background-color: rgb(121, 89, 165);
 }

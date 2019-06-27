@@ -2,22 +2,19 @@
     position: absolute;
     width:60px;
     height: 180px;
-    background-color: rgba(5, 5, 5, 0.274);
+    background-color: rgb(94,69,128);
     border-radius: 0px 10px 10px 0px;
     top: 50vh;
     z-index: 500;
 }
+#icon-container > div > a > span > i {
 
-.github{
-    color: blue;
+    color: rgba(248, 255, 241, 0.466);
 }
 
-.linkedIn {
-    color: yellow;
-}
+#icon-container > div > a > span > i:hover {
 
-.contact {
-    color: red;
+    color: rgba(248, 255, 241, 0.959);
 }
 
 @media only screen and (max-width: 1300px) {

@@ -35,7 +35,7 @@ const styles = theme => ({
 
 //function to check screen width and alter number of xolums in the grid
 function AdvancedGridList(props) {
-	console.log(props)
+	console.log(props);
 	const { classes } = props;
 	const tileData = props.tileData;
 	const columns = () => {
@@ -81,17 +81,15 @@ function AdvancedGridList(props) {
 									) : (
 										<div>
 											<IconButton
-												id='link-btn'
 												href={tile.live}
 												target='blank'
-												className={classes.icon}>
+												className='link-btn'>
 												{tile.title}
 											</IconButton>
 											<IconButton
-												id='link-btn'
 												href={tile.github}
 												target='blank'
-												className={classes.icon}>
+												className='link-btn'>
 												<i className='fab fa-github-alt fa-lg' />
 											</IconButton>
 										</div>

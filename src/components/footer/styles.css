@@ -1,9 +1,15 @@
 #bottom-mobile-nav {
     display: none;
     font-size: 1.5rem;
+    background-color:  rgb(109, 122, 96);
 }
 
-
+.link-btn > span > i {
+    color: rgba(248, 255, 241, 0.466);
+} 
+.link-btn > span > i:hover {
+    color: rgba(248, 255, 241, 0.959);
+}
 
 @media only screen and (max-width: 1300px) {
 	#bottom-mobile-nav {
@@ -14,7 +20,7 @@
         left: 0;
         width: 100%;
     }
-    #link-btn {
+    .link-btn {
         padding: 0;
     }
     .github{

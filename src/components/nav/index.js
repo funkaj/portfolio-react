@@ -50,8 +50,8 @@ function ButtonAppBar(props) {
 				keepMounted
 				open={Boolean(anchorEl)}
 				onClose={handleClose}>
-				<MenuItem onClick={handleClose}>
-					<Button>
+				<div>
+					<MenuItem className='menuBg' onClick={handleClose}>
 						<NavLink
 							exact
 							id='home'
@@ -61,10 +61,8 @@ function ButtonAppBar(props) {
 							to='/'>
 							Home
 						</NavLink>
-					</Button>
-				</MenuItem>
-				<MenuItem onClick={handleClose}>
-					<Button>
+					</MenuItem>
+					<MenuItem className='menuBg' onClick={handleClose}>
 						<NavLink
 							id='illustration'
 							className='ILL_DATA'
@@ -73,10 +71,8 @@ function ButtonAppBar(props) {
 							to='/gallery/illustration'>
 							Illustration
 						</NavLink>
-					</Button>
-				</MenuItem>
-				<MenuItem onClick={handleClose}>
-					<Button>
+					</MenuItem>
+					<MenuItem className='menuBg' onClick={handleClose}>
 						<NavLink
 							id='web-development'
 							className='DEV_DATA'
@@ -85,8 +81,8 @@ function ButtonAppBar(props) {
 							to='/gallery/web-development'>
 							Web Development
 						</NavLink>
-					</Button>
-				</MenuItem>
+					</MenuItem>
+				</div>
 			</Menu>
 			{/* mobile end */}
 		</div>
@@ -94,8 +90,8 @@ function ButtonAppBar(props) {
 	return (
 		<div className={classes.root}>
 			<AppBar id='navBar' position='static'>
-				<Toolbar>
-					<Typography variant='h4' className={classes.grow}>
+				<Toolbar className='navLink'>
+					<Typography id='title' variant='h4' className={classes.grow}>
 						Adam Funk
 					</Typography>
 					<div className='sectionDesktop'>

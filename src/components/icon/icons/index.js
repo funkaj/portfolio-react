@@ -7,7 +7,7 @@ function Icon(props) {
 
 	return (
 		<div>
-			<IconButton id='link-btn' href={link.link} target='blank'>
+			<IconButton className='link-btn' href={link.link} target='blank'>
 				<i className={`${link.icon} ${link.name}`} />
 			</IconButton>
 		</div>

@@ -5,6 +5,7 @@ import { linkData } from '../../data/links';
 import { illustrationData } from '../../data/illustrationData';
 import { DEV_DATA, ILL_DATA, HOME } from '../../constants/constants';
 import PrimarySearchAppBar from '../../nav';
+import Splash from '../main';
 import Gallery from '../gallery';
 import Contact from '../../contactnav';
 import Footer from '../../footer';
@@ -73,11 +74,7 @@ class Layout extends Component {
 					load={state.load}
 				/>
 				<Contact linkData={state.linkData} />
-				{!state.load && !state.data ? (
-					<div id='mainImg'><img src='/images/png/ninja1.png' alt='ninja' /></div>
-				) : (
-					<Gallery data={state} />
-				)}
+				{!state.load && !state.data ? <Splash /> : <Gallery data={state} />}
 				<Footer
 					handleLink={this.handleLink}
 					linkData={state.linkData}

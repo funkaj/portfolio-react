@@ -1,5 +1,6 @@
-#link-btn {
-    font-size: 1rem;
+.link-btn {
+    font-size: 1rem !important;
+    color: rgba(248, 255, 241, 0.849) !important;
 }
 
 .grid-bg {

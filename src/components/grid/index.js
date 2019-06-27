@@ -35,6 +35,7 @@ const styles = theme => ({
 
 //function to check screen width and alter number of xolums in the grid
 function AdvancedGridList(props) {
+	console.log(props)
 	const { classes } = props;
 	const tileData = props.tileData;
 	const columns = () => {
@@ -66,7 +67,7 @@ function AdvancedGridList(props) {
 						cols={tile.featured ? 2 : 1}
 						rows={tile.featured ? 2 : 1}>
 						<img
-							src={props.hasWebP ? '/' + tile.imgalt : '/' + tile.img}
+							src={props.hasWebP ? tile.imgalt : tile.img}
 							alt={tile.title}
 						/>
 

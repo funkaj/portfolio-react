@@ -74,7 +74,7 @@ class Layout extends Component {
 				/>
 				<Contact linkData={state.linkData} />
 				{!state.load && !state.data ? (
-					<div id='mainImg' />
+					<div id='mainImg'><img src='/images/png/ninja1.png' alt='ninja' /></div>
 				) : (
 					<Gallery data={state} />
 				)}

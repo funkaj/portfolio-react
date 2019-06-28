@@ -8,6 +8,7 @@ import GridListTile from '@material-ui/core/GridListTile';
 import GridListTileBar from '@material-ui/core/GridListTileBar';
 import IconButton from '@material-ui/core/IconButton';
 import LazyLoad from 'react-lazy-load';
+import ImageLoader from '../animation/imageloader';
 
 import './styles.css';
 
@@ -56,55 +57,58 @@ function AdvancedGridList(props) {
 
 	return (
 		<div className={`grid-bg ${classes.root}`}>
-			<LazyLoad onContentVisible={() => console.log('lazyloaded!')}>
-				<GridList
-					cellHeight={250}
-					cols={columns()}
-					spacing={8}
-					className={`${classes.gridList} griddy`}>
-					{tileData.map(tile => (
-						<GridListTile
-							className='gallery'
-							key={tile.img}
-							cols={tile.featured ? 2 : 1}
-							rows={tile.featured ? 2 : 1}>
-							<img
-								src={props.hasWebP ? tile.imgalt : tile.img}
-								alt={tile.title}
-							/>
-
-							<GridListTileBar
-								title={tile.art ? tile.title : null}
-								titlePosition='top'
-								actionIcon={
-									<div>
-										{tile.art ? (
-											<IconButton />
-										) : (
-											<div>
-												<IconButton
-													href={tile.live}
-													target='blank'
-													className='link-btn'>
-													{tile.title}
-												</IconButton>
-												<IconButton
-													href={tile.link}
-													target='blank'
-													className='link-btn'>
-													<i className='fab fa-github-alt fa-lg' />
-												</IconButton>
-											</div>
-										)}
-									</div>
-								}
-								actionPosition='left'
-								className={classes.titleBar}
-							/>
-						</GridListTile>
-					))}
-				</GridList>
-			</LazyLoad>
+			<GridList
+				cellHeight={250}
+				cols={columns()}
+				spacing={8}
+				className={`${classes.gridList} griddy`}>
+				{tileData.map(tile => (
+					<GridListTile
+						className='gallery'
+						key={tile.img}
+						cols={tile.featured ? 2 : 1}
+						rows={tile.featured ? 2 : 1}>
+						<div className='lazyGrid'>
+							<LazyLoad
+								debounce={false}
+								onContentVisible={() => console.log('lazyloaded!')}>
+								<ImageLoader
+									src={props.hasWebP ? tile.imgalt : tile.img}
+									alt={tile.title}
+								/>
+							</LazyLoad>
+						</div>
+						<GridListTileBar
+							title={tile.art ? tile.title : null}
+							titlePosition='top'
+							actionIcon={
+								<div>
+									{tile.art ? (
+										<IconButton />
+									) : (
+										<div>
+											<IconButton
+												href={tile.live}
+												target='blank'
+												className='link-btn'>
+												{tile.title}
+											</IconButton>
+											<IconButton
+												href={tile.link}
+												target='blank'
+												className='link-btn'>
+												<i className='fab fa-github-alt fa-lg' />
+											</IconButton>
+										</div>
+									)}
+								</div>
+							}
+							actionPosition='left'
+							className={classes.titleBar}
+						/>
+					</GridListTile>
+				))}
+			</GridList>
 		</div>
 	);
 }

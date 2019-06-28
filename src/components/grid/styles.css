@@ -8,10 +8,17 @@
 }
 
 .gallery {
-    width: 400px;
-    height: 250px;
     list-style: none;
     padding: 15px;
 }
 
+.lazyGrid {
+    width: 100%;
+    background: rgba(55, 65, 56, 0.52);
+}
 
+.lazyGrid > div > img {
+    width: 100%;
+    height: -webkit-fill-available;
+    object-fit: cover;
+}

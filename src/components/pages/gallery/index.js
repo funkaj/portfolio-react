@@ -1,5 +1,5 @@
 import React from 'react';
-import Animation from '../../animation';
+import Animation from '../../animation/stripes';
 import AdvancedGridList from '../../grid';
 
 import './styles.css';

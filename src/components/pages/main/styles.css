@@ -13,25 +13,30 @@ body, html {
     font-family: 'Marcellus SC', serif;
 }
 .name {
+    z-index: 100;
     color: rgb(233, 233, 233);
     font-size: 12rem;
 }
 #mainImg {
-    
-  /* Full height */
+    position: relative;
+    width: 100%;
+}
+#mainImg > div > img {
+    position: absolute;
+ /* Full height */
     height: 95vh;
-    width: 100vw;
-    
-    /* background-image: url('/images/jpg/ninja1.jpg'); */
-  /* Center and scale the image nicely */
+    width: 100%;
+
+    background-position: 50% 50%;
+/* Center and scale the image nicely */
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
-    background: url('/images/jpg/ninja1.jpg') no-repeat center center fixed; 
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
+    background: rgb(80, 138, 83);
+    -webkit-object-fit: cover;
+    -moz-object-fit: cover;
+    -o-object-fit: cover;
+    object-fit: cover;
+    
 }
 
 @media only screen and (max-width: 1300px) {
@@ -46,7 +51,7 @@ body, html {
 @media only screen and (max-width: 760px) {
 	
     .name {
-       display:none;
+        display:none;
     }
 
 }

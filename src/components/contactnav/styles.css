@@ -4,7 +4,7 @@
     height: 180px;
     background-color: rgb(94,69,128);
     border-radius: 0px 10px 10px 0px;
-    top: 50vh;
+    top: 45vh;
     z-index: 500;
 }
 #icon-container > div > a > span > i {

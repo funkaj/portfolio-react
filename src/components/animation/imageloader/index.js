@@ -13,6 +13,8 @@ class ImageLoader extends Component {
 		className: '',
 		loadingClassName: 'img-loading',
 		loadedClassName: 'img-loaded',
+		alt: '',
+		noAltName: 'Default-image',
 	};
 
 	//image onLoad handler to update state to loaded
@@ -22,9 +24,13 @@ class ImageLoader extends Component {
 	};
 
 	render() {
-		// eslint-disable-next-line no-unused-vars
-		let { className, loadedClassName, loadingClassName, ...props } = this.props;
-		console.log(this.props);
+		let {
+			className,
+			loadedClassName,
+			loadingClassName,
+			// eslint-disable-next-line no-unused-vars
+			...props
+		} = this.props;
 
 		className = `${className} ${
 			this.state.isLoaded ? loadedClassName : loadingClassName
@@ -37,6 +43,7 @@ class ImageLoader extends Component {
 				onClick={this.props.onClick}
 				className={className}
 				onLoad={this.onLoad}
+				alt={this.props.alt}
 			/>
 		);
 	}

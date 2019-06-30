@@ -27,11 +27,10 @@ const styles = {
 };
 
 function ButtonAppBar(props) {
+	const art = props;
 	const { classes } = props;
 	const [anchorEl, setAnchorEl] = React.useState(null);
-
-	// eslint-disable-next-line no-unused-vars
-	const load = props.load;
+	console.log(art);
 
 	function handleClick(event) {
 		setAnchorEl(event.currentTarget);
@@ -91,7 +90,7 @@ function ButtonAppBar(props) {
 		<div className={classes.root}>
 			<AppBar id='navBar' position='static'>
 				<Toolbar className='navLink'>
-					<Typography id='title' variant='h4' className={classes.grow}>
+					<Typography id='title' variant='h3' className={classes.grow}>
 						Adam Funk
 					</Typography>
 					<div className='sectionDesktop'>

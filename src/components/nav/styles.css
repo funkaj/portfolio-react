@@ -43,7 +43,7 @@ background-color: rgb(94, 69, 128);
 }
 
 @media only screen and (min-width: 760px) {
-	#title {
+	#name {
 		display: none;
 	}
 }

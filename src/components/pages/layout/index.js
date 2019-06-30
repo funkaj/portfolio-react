@@ -20,6 +20,7 @@ class Layout extends Component {
 		data: '',
 		linkData,
 		value: 0,
+		title: '',
 	};
 	async componentDidMount() {
 		const state = this.state;
@@ -49,15 +50,20 @@ class Layout extends Component {
 				this.setState({ load: true });
 				this.setState({ data: '' });
 				this.setState({ data: devData });
+				this.setState({ pageLink: 'web-development' });
+				this.setState({ title: 'Web Development' });
 				return state;
 			case ILL_DATA:
 				this.setState({ load: false });
 				this.setState({ data: '' });
 				this.setState({ data: illustrationData });
+				this.setState({ pageLink: 'illustration' });
+				this.setState({ title: 'Illustration' });
 				return state;
 			case HOME:
 				this.setState({ load: false });
 				this.setState({ data: '' });
+				this.setState({ pageLink: '/' });
 				return state;
 			default:
 				return state;
@@ -72,6 +78,8 @@ class Layout extends Component {
 				<PrimarySearchAppBar
 					handleSwitchData={this.handleSwitchData}
 					load={state.load}
+					pagelink={state.pageLink}
+					title={state.title}
 				/>
 				<Contact linkData={state.linkData} />
 				{!state.load && !state.data ? <Splash /> : <Gallery data={state} />}

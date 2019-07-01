@@ -13,9 +13,10 @@
     "react-image-lightbox": "^5.1.0",
     "react-lazy-load": "^3.0.13",
     "react-router-dom": "^5.0.1",
-    "react-scripts": "2.1.8",
+    "react-scripts": "^3.0.1",
     "redux": "^4.0.1",
-    "routing": "^0.0.2"
+    "routing": "^0.0.2",
+    "tar": "^4.4.10"
   },
   "scripts": {
     "start": "react-scripts start",

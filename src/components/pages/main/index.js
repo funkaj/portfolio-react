@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import ImageLoader from '../../animation/imageloader';
 import LazyLoad from 'react-lazy-load';
 import './styles.css';
-import '/images/jpg/ninja1.jpg';
 
 class Splash extends Component {
 	render() {

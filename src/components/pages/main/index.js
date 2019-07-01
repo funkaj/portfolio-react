@@ -10,6 +10,7 @@ class Splash extends Component {
 				<div id='mainImg'>
 					<LazyLoad onContentVisible={() => console.log('lazyloaded!')}>
 						<ImageLoader src='images/jpg/ninja1.jpg' alt='ninja' />
+						<ImageLoader src='images/webp/ninja1.webp' alt='ninja' />
 					</LazyLoad>
 					<div id='brand'>
 						<div className='name'>Adam</div>

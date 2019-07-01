@@ -1,7 +1,7 @@
 export const devData = [
 	{
-		img: '/images/webp/sdth1.webp',
-		imgalt: '/images/png/sdth1.png',
+		img: '%PUBLIC_URL%/images/webp/sdth1.webp',
+		imgalt: '%PUBLIC_URL%/images/png/sdth1.png',
 		title: 'San Diego Tech Hub',
 		author: 'SDTH',
 		link: 'https://github.com/san-diego-tech-hub/sdth-site',
@@ -12,8 +12,8 @@ export const devData = [
 		featured: false,
 	},
 	{
-		img: '/images/gif/jobpiper.gif',
-		imgalt: '/images/gif/jobpiper.gif',
+		img: '%PUBLIC_URL%/images/gif/jobpiper.gif',
+		imgalt: '%PUBLIC_URL%/images/gif/jobpiper.gif',
 		title: 'Job Piper',
 		author: 'Adam Funk, Jesse Loftus, Jordon, Silver, Phillip',
 		link: 'https://github.com/ScriptKiddie1337/JobPiper.io',
@@ -24,8 +24,8 @@ export const devData = [
 		featured: false,
 	},
 	{
-		img: '/images/webp/crystalGame.webp',
-		imgalt: '/images/png/crystalGame.png',
+		img: '%PUBLIC_URL%/images/webp/crystalGame.webp',
+		imgalt: '%PUBLIC_URL%/images/png/crystalGame.png',
 		title: 'Crystal Madness',
 		author: 'Adam Funk',
 		link: 'https://github.com/funkaj/Crystal-Madness',
@@ -36,8 +36,8 @@ export const devData = [
 		featured: false,
 	},
 	{
-		img: '/images/webp/plate1.webp',
-		imgalt: '/images/png/chef.png',
+		img: '%PUBLIC_URL%/images/webp/plate1.webp',
+		imgalt: '%PUBLIC_URL%/images/png/chef.png',
 		title: 'Dynamite Kitchen Supplies',
 		author: 'Adam, Jesse',
 		link: 'https://github.com/funkaj/Dynamite-Kitchen-Supplies',
@@ -48,8 +48,8 @@ export const devData = [
 		featured: false,
 	},
 	{
-		img: '/images/gif/raccoon-demo.gif',
-		imgalt: '/images/gif/raccoon-demo.gif',
+		img: '%PUBLIC_URL%/images/gif/raccoon-demo.gif',
+		imgalt: '%PUBLIC_URL%/images/gif/raccoon-demo.gif',
 		title: 'Raccoon Fighter!',
 		link: 'https://github.com/funkaj/Raccoon-Fighter',
 		live: 'https://github.com/funkaj/Raccoon-Fighter',
@@ -58,8 +58,8 @@ export const devData = [
 	},
 
 	{
-		img: '/images/png/gifapalooza.png',
-		imgalt: '/images/png/gifapalooza.png',
+		img: '%PUBLIC_URL%/images/png/gifapalooza.png',
+		imgalt: '%PUBLIC_URL%/images/png/gifapalooza.png',
 		title: 'Gifapalooza',
 		link: 'https://github.com/funkaj/Gifapalooza',
 		live: 'https://funkaj.github.io/Gifapalooza/',
@@ -68,8 +68,8 @@ export const devData = [
 			'Web page that searches the Giphy API for user queryed gif. Built for practice using API in web development.',
 	},
 	{
-		img: '/images/webp/friend_finder01.webp',
-		imgalt: '/images/png/friend_finder01.png',
+		img: '%PUBLIC_URL%/images/webp/friend_finder01.webp',
+		imgalt: '%PUBLIC_URL%/images/png/friend_finder01.png',
 		title: 'Friend Finder',
 		link: 'https://github.com/funkaj/FriendFinder',
 		live: 'https://blooming-anchorage-67787.herokuapp.com/',
@@ -79,8 +79,8 @@ export const devData = [
 		featured: false,
 	},
 	{
-		img: '/images/png/liri-node-app.png',
-		imgalt: '/images/png/liri-node-app.png',
+		img: '%PUBLIC_URL%/images/png/liri-node-app.png',
+		imgalt: '%PUBLIC_URL%/images/png/liri-node-app.png',
 		title: 'Liri-app',
 		link: 'https://github.com/funkaj/liri-node-app',
 		live: 'https://github.com/funkaj/liri-node-app',
@@ -89,8 +89,8 @@ export const devData = [
 			'LIRI is a Language Interpretation and Recognition Interface. LIRI will be a command line node app that takes in parameters and gives you back data.',
 	},
 	{
-		img: '/images/webp/destinator.webp',
-		imgalt: '/images/png/destinator.png',
+		img: '%PUBLIC_URL%/images/webp/destinator.webp',
+		imgalt: '%PUBLIC_URL%/images/png/destinator.png',
 		title: 'The-Destinator',
 		link: 'https://github.com/funkaj/TheDestinator',
 		live: 'https://loftusjl.github.io/TheDestinator/',

@@ -13,9 +13,6 @@ class Splash extends Component {
 					</LazyLoad>
 					<div id='brand'>
 						<div className='name'>Adam</div>
-						<div>
-							<ImageLoader src='images/png/ninja1.png' alt='newninja' />
-						</div>
 						<div className='name'>Funk</div>
 					</div>
 				</div>

@@ -24,6 +24,7 @@ class Layout extends Component {
 	};
 	async componentDidMount() {
 		const state = this.state;
+		console.log(state);
 		//to see if feature is availible in browser
 		// eslint-disable-next-line no-unused-vars
 		function checkImg() {

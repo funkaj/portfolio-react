@@ -69,9 +69,7 @@ function AdvancedGridList(props) {
 						cols={tile.featured ? 2 : 1}
 						rows={tile.featured ? 2 : 1}>
 						<div className='lazyGrid'>
-							<LazyLoad
-								debounce={false}
-								onContentVisible={() => console.log('lazyloaded!')}>
+							<LazyLoad debounce={false}>
 								<ImageLoader
 									src={props.hasWebP ? tile.imgalt : tile.img}
 									alt={tile.title}

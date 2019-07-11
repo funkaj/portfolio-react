@@ -38,6 +38,7 @@ function ButtonAppBar(props) {
     setAnchorEl(null);
   }
   const mobileMenuId = "primary-search-account-menu-mobile";
+
   const renderMobileMenu = (
     <div>
       {/* mobile start*/}
@@ -55,7 +56,6 @@ function ButtonAppBar(props) {
               id="home"
               className="HOME"
               activeClassName="active"
-              onClick={props.handleSwitchData}
               to="/"
             >
               Home
@@ -66,8 +66,7 @@ function ButtonAppBar(props) {
               id="illustration"
               className="ILL_DATA"
               activeClassName="active"
-              onClick={props.handleSwitchData}
-              to="/gallery/illustration"
+              to="/illustration"
             >
               Illustration
             </NavLink>
@@ -77,8 +76,7 @@ function ButtonAppBar(props) {
               id="web-development"
               className="DEV_DATA"
               activeClassName="active"
-              onClick={props.handleSwitchData}
-              to="/gallery/web-development"
+              to="/web-development"
             >
               Web Development
             </NavLink>
@@ -102,7 +100,6 @@ function ButtonAppBar(props) {
                 id="home"
                 className="HOME"
                 activeClassName="active"
-                onClick={props.handleSwitchData}
                 to="/"
               >
                 Home
@@ -113,8 +110,7 @@ function ButtonAppBar(props) {
                 id="illustration"
                 className="ILL_DATA"
                 activeClassName="active"
-                onClick={props.handleSwitchData}
-                to="/gallery/illustration"
+                to="/illustration"
               >
                 Illustration
               </NavLink>
@@ -124,8 +120,7 @@ function ButtonAppBar(props) {
                 id="web-development"
                 className="DEV_DATA"
                 activeClassName="active"
-                onClick={props.handleSwitchData}
-                to="/gallery/web-development"
+                to="/web-development"
               >
                 Web Development
               </NavLink>

@@ -1,24 +1,23 @@
 #icon-container {
-    position: absolute;
-    width:60px;
-    height: 180px;
-    background-color: rgb(94,69,128);
-    border-radius: 0px 10px 10px 0px;
-    top: 45vh;
-    z-index: 500;
+	position: absolute;
+	width: 60px;
+	height: 180px;
+	background-color: rgb(94, 69, 128);
+	border-radius: 0px 10px 10px 0px;
+	top: 45vh;
+	z-index: 500;
 }
 #icon-container > div > a > span > i {
-
-    color: rgba(248, 255, 241, 0.466);
+	font-size: 2rem;
+	color: rgba(248, 255, 241, 0.466);
 }
 
 #icon-container > div > a > span > i:hover {
-
-    color: rgba(248, 255, 241, 0.959);
+	color: rgba(248, 255, 241, 0.959);
 }
 
 @media only screen and (max-width: 1300px) {
 	#icon-container {
-        display: none;
-    }
+		display: none;
+	}
 }

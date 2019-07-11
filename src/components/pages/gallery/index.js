@@ -7,10 +7,11 @@ import "./styles.css";
 // Component to build out the grid for the gallery
 function Gallery(props) {
   const data = props.data;
-
+  console.log(data);
   return (
     <div>
       <div id="wrapper">
+        <div>Blue</div>
         <AdvancedGridList
           hasWebP={data.hasWebP}
           tileData={data.data}

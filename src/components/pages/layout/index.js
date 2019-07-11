@@ -1,12 +1,10 @@
 import React, { Component } from "react";
-
 import { devData } from "../../data/devData";
 import { linkData } from "../../data/links";
+
 import { illustrationData } from "../../data/illustrationData";
 import { DEV_DATA, ILL_DATA, HOME } from "../../constants/constants";
 import PrimarySearchAppBar from "../../nav";
-import Splash from "../main";
-import Gallery from "../gallery";
 import Contact from "../../contactnav";
 import Footer from "../../footer";
 import "./styles.css";
@@ -79,12 +77,10 @@ class Layout extends Component {
       <div>
         <PrimarySearchAppBar
           handleSwitchData={this.handleSwitchData}
-          load={state.load}
-          pagelink={state.pageLink}
-          title={state.title}
+          data={state}
         />
         <Contact linkData={state.linkData} />
-        {!state.load && !state.data ? <Splash /> : <Gallery data={state} />}
+
         <Footer
           handleLink={this.handleLink}
           linkData={state.linkData}

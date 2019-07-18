@@ -66,7 +66,9 @@ function ButtonAppBar(props) {
               id="illustration"
               className="ILL_DATA"
               activeClassName="active"
-              to="/illustration"
+              to={{
+                pathname: "/gallery/illustration"
+              }}
             >
               Illustration
             </NavLink>
@@ -76,7 +78,9 @@ function ButtonAppBar(props) {
               id="web-development"
               className="DEV_DATA"
               activeClassName="active"
-              to="/web-development"
+              to={{
+                pathname: "/gallery/web-development"
+              }}
             >
               Web Development
             </NavLink>
@@ -86,6 +90,7 @@ function ButtonAppBar(props) {
       {/* mobile end */}
     </div>
   );
+
   return (
     <div className={classes.root}>
       <AppBar id="navBar" position="static">
@@ -110,7 +115,9 @@ function ButtonAppBar(props) {
                 id="illustration"
                 className="ILL_DATA"
                 activeClassName="active"
-                to="/illustration"
+                to={{
+                  pathname: "/gallery/illustration"
+                }}
               >
                 Illustration
               </NavLink>
@@ -120,7 +127,9 @@ function ButtonAppBar(props) {
                 id="web-development"
                 className="DEV_DATA"
                 activeClassName="active"
-                to="/web-development"
+                to={{
+                  pathname: "/gallery/web-development"
+                }}
               >
                 Web Development
               </NavLink>

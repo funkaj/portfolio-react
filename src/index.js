@@ -10,7 +10,7 @@ import * as serviceWorker from "./serviceWorker";
 const routing = (
   <Router>
     <Switch>
-      <Route exact path="/" component={Main} />
+      <Route exact path="/index" component={Main} />
       <Route path="/gallery/illustration" component={Gallery} />
       <Route path="/gallery/web-development" component={Gallery} />
       <Route component={NotFound} />

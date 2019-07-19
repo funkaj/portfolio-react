@@ -61,7 +61,7 @@ function ButtonAppBar(props) {
               id="home"
               className="HOME"
               activeClassName="active"
-              to="/index"
+              to="/"
             >
               Home
             </NavLink>
@@ -107,7 +107,7 @@ function ButtonAppBar(props) {
                 id="home"
                 className="HOME"
                 activeClassName="active"
-                to="/index"
+                to="/"
               >
                 Home
               </NavLink>

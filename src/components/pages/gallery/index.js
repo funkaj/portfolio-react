@@ -20,7 +20,8 @@ class Gallery extends Component {
   };
   componentDidMount() {
     const state = this.state;
-    //to see if feature is availible in browser
+
+    // to see if feature is availible in browser
     // eslint-disable-next-line no-unused-vars
     function checkImg() {
       let img = new Image();
@@ -54,28 +55,27 @@ class Gallery extends Component {
     this.setState({ value });
   };
 
-  getRoute = (e) => {
-  
-    let route = window.location.pathname
+  getRoute = e => {
+    let route = window.location.pathname;
     if (route === "/gallery/illustration") {
-      this.setState({load: false})
-      this.setState({data: illustrationData})
-      this.setState({pageLink: "illustration"})
-      this.setState({title: "Illustration"})
-    } 
-    if (route === "/gallery/web-development") {
-      this.setState({load: true})
-      this.setState({data: devData})
-      this.setState({pageLink: "web-development"})
-      this.setState({title: "Web Development"})
+      this.setState({ load: false });
+      this.setState({ data: illustrationData });
+      this.setState({ pageLink: "illustration" });
+      this.setState({ title: "Illustration" });
     }
-  }
+    if (route === "/gallery/web-development") {
+      this.setState({ load: true });
+      this.setState({ data: devData });
+      this.setState({ pageLink: "web-development" });
+      this.setState({ title: "Web Development" });
+    }
+  };
   // Component to build out the grid for the gallery
 
   render() {
     return (
       <div>
-        <Layout getRoute={this.getRoute}/>
+        <Layout getRoute={this.getRoute} />
         <div id="wrapper">
           <AdvancedGridList
             hasWebP={this.state.hasWebP}

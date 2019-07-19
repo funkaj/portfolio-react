@@ -33,7 +33,13 @@ function ButtonAppBar(props) {
   function handleClick(event) {
     setAnchorEl(event.currentTarget);
   }
-
+  function handleChange() {
+    setTimeout(function() {
+      if (props.getRoute) {
+        props.getRoute(window.location.pathname);
+      }
+    }, 10);
+  }
   function handleClose() {
     setAnchorEl(null);
   }
@@ -55,7 +61,6 @@ function ButtonAppBar(props) {
               id="home"
               className="HOME"
               activeClassName="active"
-              onClick={props.handleSwitchData}
               to="/"
             >
               Home
@@ -66,8 +71,8 @@ function ButtonAppBar(props) {
               id="illustration"
               className="ILL_DATA"
               activeClassName="active"
-              onClick={props.handleSwitchData}
               to="/gallery/illustration"
+              onClick={handleChange}
             >
               Illustration
             </NavLink>
@@ -77,8 +82,8 @@ function ButtonAppBar(props) {
               id="web-development"
               className="DEV_DATA"
               activeClassName="active"
-              onClick={props.handleSwitchData}
               to="/gallery/web-development"
+              onClick={handleChange}
             >
               Web Development
             </NavLink>
@@ -102,7 +107,6 @@ function ButtonAppBar(props) {
                 id="home"
                 className="HOME"
                 activeClassName="active"
-                onClick={props.handleSwitchData}
                 to="/"
               >
                 Home
@@ -113,8 +117,8 @@ function ButtonAppBar(props) {
                 id="illustration"
                 className="ILL_DATA"
                 activeClassName="active"
-                onClick={props.handleSwitchData}
                 to="/gallery/illustration"
+                onClick={handleChange}
               >
                 Illustration
               </NavLink>
@@ -124,8 +128,8 @@ function ButtonAppBar(props) {
                 id="web-development"
                 className="DEV_DATA"
                 activeClassName="active"
-                onClick={props.handleSwitchData}
                 to="/gallery/web-development"
+                onClick={handleChange}
               >
                 Web Development
               </NavLink>

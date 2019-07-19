@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import ImageLoader from "../../animation/imageloader";
+import Layout from "../layout";
 import LazyLoad from "react-lazy-load";
 import "./styles.css";
 
@@ -7,6 +8,7 @@ class Splash extends Component {
   render() {
     return (
       <div>
+        <Layout />
         <div id="mainImg">
           <LazyLoad>
             <ImageLoader src="images/jpg/ninja1.jpg" alt="ninja" />

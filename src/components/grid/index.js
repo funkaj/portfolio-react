@@ -37,9 +37,9 @@ const styles = theme => ({
 
 //function to check screen width and alter number of xolums in the grid
 function AdvancedGridList(props) {
-  console.log(props);
   const { classes } = props;
-  const tileData = props.tileData;
+
+  const tileData = props.tileData.data;
   const columns = () => {
     if (isWidthDown("xs", props.width)) {
       return 1;
@@ -63,7 +63,7 @@ function AdvancedGridList(props) {
         spacing={8}
         className={`${classes.gridList} griddy`}
       >
-        {tileData.map(tile => (
+        {tileData.slice(0, 6).map(tile => (
           <GridListTile
             className="gallery"
             key={tile.img}
@@ -73,6 +73,7 @@ function AdvancedGridList(props) {
             <div className="lazyGrid">
               <LazyLoad debounce={false}>
                 <ImageLoader
+                  //src={tile.img}
                   src={props.hasWebP ? tile.imgalt : tile.img}
                   alt={tile.title}
                 />

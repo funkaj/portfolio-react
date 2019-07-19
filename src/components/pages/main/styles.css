@@ -1,53 +1,52 @@
 body,
 html {
-  height: 100%;
+	height: 100%;
 }
 
 #brand {
-  display: flex;
-  text-align: right;
-  flex-direction: column;
-  padding-top: 40vh;
-  padding-bottom: 0px;
-  margin-right: 15vw;
+	display: flex;
+	text-align: right;
+	flex-direction: column;
+	padding-top: 40vh;
+	padding-bottom: 0px;
+	margin-right: 15vw;
 
-  font-family: "Marcellus SC", serif;
+	font-family: 'Marcellus SC', serif;
 }
 .name {
-  z-index: 100;
-  color: rgb(233, 233, 233);
-  font-size: 12rem;
+	z-index: 100;
+	color: rgb(233, 233, 233);
+	font-size: 12rem;
 }
 #mainImg {
-  position: relative;
-  width: 100%;
+	position: relative;
+	width: 100%;
 }
 #mainImg > div > img {
-  position: absolute;
-  /* Full height */
-  height: 95vh;
-  width: 100%;
-
-  background-position: 50% 50%;
-  /* Center and scale the image nicely */
-  background-position: center;
-  background-repeat: no-repeat;
-  background: rgb(80, 138, 83);
-  -webkit-object-fit: cover;
-  -moz-object-fit: cover;
-  -o-object-fit: cover;
-  object-fit: cover;
+	position: absolute;
+	/* Full height */
+	height: 95vh;
+	width: 100%;
+	background-position: 50% 50%;
+	/* Center and scale the image nicely */
+	background-position: center;
+	background-repeat: no-repeat;
+	background: rgb(80, 138, 83);
+	-webkit-object-fit: cover;
+	-moz-object-fit: cover;
+	-o-object-fit: cover;
+	object-fit: cover;
 }
 
 @media only screen and (max-width: 1300px) {
-  .name {
-    color: white;
-    font-size: 8rem;
-  }
+	.name {
+		color: white;
+		font-size: 8rem;
+	}
 }
 
 @media only screen and (max-width: 760px) {
-  .name {
-    display: none;
-  }
+	.name {
+		display: none;
+	}
 }

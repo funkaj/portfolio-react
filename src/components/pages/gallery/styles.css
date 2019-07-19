@@ -1,19 +1,22 @@
+html {
+	overflow: auto;
+}
 #wrapper {
-  position: relative;
-  margin: 8rem auto;
-  padding: 5px;
-  max-width: 75vw;
+	position: relative;
+	margin: 8rem auto;
+	padding: 5px;
+	max-width: 75vw;
 }
 @media only screen and (max-width: 1400px) {
-  #wrapper {
-    margin: 6rem auto;
-    margin-bottom: 2rem;
-  }
+	#wrapper {
+		margin: 6rem auto;
+		margin-bottom: 2rem;
+	}
 }
 @media only screen and (max-width: 1300px) {
-  #wrapper {
-    margin: 1rem auto;
-    margin-bottom: 2rem;
-    max-width: 95vw;
-  }
+	#wrapper {
+		margin: 5rem auto;
+		margin-top: 2rem;
+		max-width: 95vw;
+	}
 }

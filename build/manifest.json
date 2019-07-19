@@ -1,0 +1,8 @@
+{
+  "short_name": "AFA",
+  "name": "Adam Funk Art",
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#5e4580",
+  "background_color": "#e9e9e9"
+}

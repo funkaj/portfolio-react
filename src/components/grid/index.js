@@ -38,7 +38,7 @@ const styles = theme => ({
 //function to check screen width and alter number of xolums in the grid
 function AdvancedGridList(props) {
   const { classes } = props;
-  console.log(props.tileData.data);
+
   const tileData = props.tileData.data;
   const columns = () => {
     if (isWidthDown("xs", props.width)) {

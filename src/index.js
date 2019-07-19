@@ -11,8 +11,8 @@ const routing = (
   <Router>
     <Switch>
       <Route exact path="/" component={Main} />
-      <Route path="/gallery/illustration/" component={Gallery} />
-      <Route path="/gallery/web-development/" component={Gallery} />
+      <Route path="/gallery/illustration" component={Gallery} />
+      <Route path="/gallery/web-development" component={Gallery} />
       <Route component={NotFound} />
     </Switch>
   </Router>

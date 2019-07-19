@@ -9,7 +9,7 @@ class Layout extends Component {
   render() {
     return (
       <div>
-        <PrimarySearchAppBar data={this.state} />
+        <PrimarySearchAppBar data={this.state} getRoute={this.props.getRoute} />
         <Contact linkData={this.state.linkData} />
 
         <Footer

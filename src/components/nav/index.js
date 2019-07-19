@@ -33,12 +33,17 @@ function ButtonAppBar(props) {
   function handleClick(event) {
     setAnchorEl(event.currentTarget);
   }
-
+  function handleChange() {
+    setTimeout(function() {
+      if (props.getRoute) {
+        props.getRoute(window.location.pathname);
+      }
+    }, 10);
+  }
   function handleClose() {
     setAnchorEl(null);
   }
   const mobileMenuId = "primary-search-account-menu-mobile";
-
   const renderMobileMenu = (
     <div>
       {/* mobile start*/}
@@ -66,9 +71,8 @@ function ButtonAppBar(props) {
               id="illustration"
               className="ILL_DATA"
               activeClassName="active"
-              to={{
-                pathname: "/gallery/illustration"
-              }}
+              to="/gallery/illustration"
+              onClick={handleChange}
             >
               Illustration
             </NavLink>
@@ -78,9 +82,8 @@ function ButtonAppBar(props) {
               id="web-development"
               className="DEV_DATA"
               activeClassName="active"
-              to={{
-                pathname: "/gallery/web-development"
-              }}
+              to="/gallery/web-development"
+              onClick={handleChange}
             >
               Web Development
             </NavLink>
@@ -90,7 +93,6 @@ function ButtonAppBar(props) {
       {/* mobile end */}
     </div>
   );
-
   return (
     <div className={classes.root}>
       <AppBar id="navBar" position="static">
@@ -115,9 +117,8 @@ function ButtonAppBar(props) {
                 id="illustration"
                 className="ILL_DATA"
                 activeClassName="active"
-                to={{
-                  pathname: "/gallery/illustration"
-                }}
+                to="/gallery/illustration"
+                onClick={handleChange}
               >
                 Illustration
               </NavLink>
@@ -127,9 +128,8 @@ function ButtonAppBar(props) {
                 id="web-development"
                 className="DEV_DATA"
                 activeClassName="active"
-                to={{
-                  pathname: "/gallery/web-development"
-                }}
+                to="/gallery/web-development"
+                onClick={handleChange}
               >
                 Web Development
               </NavLink>

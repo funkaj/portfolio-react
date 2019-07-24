@@ -33,12 +33,13 @@ function ButtonAppBar(props) {
   function handleClick(event) {
     setAnchorEl(event.currentTarget);
   }
-  function handleChange() {
+  function change(e) {
     setTimeout(function() {
-      if (props.getRoute) {
-        props.getRoute(window.location.pathname);
+      if (props.handleSwitch) {
+        props.handleSwitch(window.location.hash);
       }
     }, 10);
+    // props.handleSwitch(e.target.href);
   }
   function handleClose() {
     setAnchorEl(null);
@@ -61,7 +62,7 @@ function ButtonAppBar(props) {
               id="home"
               className="HOME"
               activeClassName="active"
-              to="/index"
+              to="/"
             >
               Home
             </NavLink>
@@ -72,7 +73,7 @@ function ButtonAppBar(props) {
               className="ILL_DATA"
               activeClassName="active"
               to="/gallery/illustration"
-              onClick={handleChange}
+              onClick={change}
             >
               Illustration
             </NavLink>
@@ -83,7 +84,7 @@ function ButtonAppBar(props) {
               className="DEV_DATA"
               activeClassName="active"
               to="/gallery/web-development"
-              onClick={handleChange}
+              onClick={change}
             >
               Web Development
             </NavLink>
@@ -107,7 +108,7 @@ function ButtonAppBar(props) {
                 id="home"
                 className="HOME"
                 activeClassName="active"
-                to="/index"
+                to="/"
               >
                 Home
               </NavLink>
@@ -118,7 +119,6 @@ function ButtonAppBar(props) {
                 className="ILL_DATA"
                 activeClassName="active"
                 to="/gallery/illustration"
-                onClick={handleChange}
               >
                 Illustration
               </NavLink>
@@ -129,7 +129,6 @@ function ButtonAppBar(props) {
                 className="DEV_DATA"
                 activeClassName="active"
                 to="/gallery/web-development"
-                onClick={handleChange}
               >
                 Web Development
               </NavLink>

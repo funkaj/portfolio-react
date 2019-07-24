@@ -11,16 +11,24 @@ import { devData } from "../../data/devData";
 class Gallery extends Component {
   state = {
     images: "",
-    pageLink: "",
-    hasWebP: false,
+    pageLink: "illustration",
+    hasWebP: true,
     load: false,
-    data: "",
+    data: illustrationData,
     value: 0,
-    title: ""
+    title: "Illustration"
   };
-  componentDidMount() {
+  // state = {
+  //   images: "",
+  //   pageLink: "",
+  //   hasWebP: false,
+  //   load: false,
+  //   data: "",
+  //   value: 0,
+  //   title: ""
+  // };
+  componentWillMount() {
     const state = this.state;
-
     // to see if feature is availible in browser
     // eslint-disable-next-line no-unused-vars
     function checkImg() {
@@ -36,50 +44,52 @@ class Gallery extends Component {
     checkImg();
 
     function getRoute(e) {
-      if (e === "/#/gallery/illustration") {
+      if (e === "#/gallery/illustration") {
         state.load = false;
         state.data = illustrationData;
         state.pageLink = "illustration";
         state.title = "Illustration";
-      } else if (e === "/#/gallery/web-development") {
+      } else if (e === "#/gallery/web-development") {
         state.load = true;
         state.data = devData;
         state.pageLink = "web-development";
         state.title = "Web Development";
       }
     }
-    getRoute(window.location.pathname);
+    getRoute(window.location.hash);
   }
 
   handleLink = (event, value) => {
     this.setState({ value });
   };
 
-  getRoute = e => {
-    let route = window.location.pathname;
-    if (route === "/#/gallery/illustration") {
+  handleSwitch = e => {
+    let route = window.location.hash;
+    console.log(route);
+    if (route === "#/gallery/illustration") {
+      console.log("I am called");
       this.setState({ load: false });
       this.setState({ data: illustrationData });
       this.setState({ pageLink: "illustration" });
       this.setState({ title: "Illustration" });
     }
-    if (route === "/#/gallery/web-development") {
+    if (route === "#/gallery/web-development") {
       this.setState({ load: true });
       this.setState({ data: devData });
       this.setState({ pageLink: "web-development" });
       this.setState({ title: "Web Development" });
     }
   };
-  // Component to build out the grid for the gallery
 
+  // Component to build out the grid for the gallery
   render() {
     return (
       <div>
-        <Layout getRoute={this.getRoute} />
+        <Layout handleSwitch={this.handleSwitch} />
         <div id="wrapper">
           <AdvancedGridList
             hasWebP={this.state.hasWebP}
-            tileData={this.state}
+            tileData={this.state.data}
             load={this.state.load}
             linkData={this.state.linkData}
           />

@@ -39,7 +39,7 @@ const styles = theme => ({
 function AdvancedGridList(props) {
   const { classes } = props;
 
-  const tileData = props.tileData.data;
+  const tileData = props.tileData;
   const columns = () => {
     if (isWidthDown("xs", props.width)) {
       return 1;

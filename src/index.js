@@ -8,7 +8,7 @@ import NotFound from "./components/pages/404";
 import * as serviceWorker from "./serviceWorker";
 
 const routing = (
-  <HashRouter basenam="/">
+  <HashRouter basename="/">
     <Switch>
       <Route exact path="/" component={Main} />
       <Route path="/index" component={Main} />

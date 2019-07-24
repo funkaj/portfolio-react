@@ -119,6 +119,7 @@ function ButtonAppBar(props) {
                 className="ILL_DATA"
                 activeClassName="active"
                 to="/gallery/illustration"
+                onClick={change}
               >
                 Illustration
               </NavLink>
@@ -129,6 +130,7 @@ function ButtonAppBar(props) {
                 className="DEV_DATA"
                 activeClassName="active"
                 to="/gallery/web-development"
+                onClick={change}
               >
                 Web Development
               </NavLink>

@@ -36,12 +36,12 @@ class Gallery extends Component {
     checkImg();
 
     function getRoute(e) {
-      if (e === "/gallery/illustration") {
+      if (e === "/#/gallery/illustration") {
         state.load = false;
         state.data = illustrationData;
         state.pageLink = "illustration";
         state.title = "Illustration";
-      } else if (e === "/gallery/web-development") {
+      } else if (e === "/#/gallery/web-development") {
         state.load = true;
         state.data = devData;
         state.pageLink = "web-development";
@@ -57,13 +57,13 @@ class Gallery extends Component {
 
   getRoute = e => {
     let route = window.location.pathname;
-    if (route === "/gallery/illustration") {
+    if (route === "/#/gallery/illustration") {
       this.setState({ load: false });
       this.setState({ data: illustrationData });
       this.setState({ pageLink: "illustration" });
       this.setState({ title: "Illustration" });
     }
-    if (route === "/gallery/web-development") {
+    if (route === "/#/gallery/web-development") {
       this.setState({ load: true });
       this.setState({ data: devData });
       this.setState({ pageLink: "web-development" });

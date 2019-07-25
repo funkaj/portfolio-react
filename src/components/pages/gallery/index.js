@@ -65,7 +65,6 @@ class Gallery extends Component {
 
   handleSwitch = e => {
     let route = window.location.hash;
-
     if (route === "#/gallery/illustration") {
       this.setState({ load: false });
       this.setState({ data: illustrationData });

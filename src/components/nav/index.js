@@ -7,7 +7,6 @@ import PropTypes from "prop-types";
 import { withStyles } from "@material-ui/core/styles";
 
 import AppBar from "@material-ui/core/AppBar";
-import Button from "@material-ui/core/Button";
 import MoreIcon from "@material-ui/icons/MoreVert";
 import Toolbar from "@material-ui/core/Toolbar";
 import Typography from "@material-ui/core/Typography";
@@ -104,39 +103,33 @@ function ButtonAppBar(props) {
             Adam Funk
           </Typography>
           <div className="sectionDesktop">
-            <Button>
-              <NavLink
-                exact
-                id="home"
-                className="HOME"
-                activeClassName="active"
-                to="/"
-              >
-                Home
-              </NavLink>
-            </Button>
-            <Button>
-              <NavLink
-                id="illustration"
-                className="ILL_DATA"
-                activeClassName="active"
-                to="/gallery/illustration"
-                onClick={change}
-              >
-                Illustration
-              </NavLink>
-            </Button>
-            <Button>
-              <NavLink
-                id="web-development"
-                className="DEV_DATA"
-                activeClassName="active"
-                to="/gallery/web-development"
-                onClick={change}
-              >
-                Web Development
-              </NavLink>
-            </Button>
+            <NavLink
+              exact
+              id="home"
+              className="navLink-btn"
+              activeClassName="active"
+              to="/"
+            >
+              Home
+            </NavLink>
+            <NavLink
+              id="illustration"
+              className="navLink-btn"
+              activeClassName="active"
+              to="/gallery/illustration"
+              onClick={change}
+            >
+              Illustration
+            </NavLink>
+            <NavLink
+              id="web-development"
+              className="navLink-btn"
+              activeClassName="active"
+              to="/gallery/web-development"
+              onClick={change}
+            >
+              Web Development
+            </NavLink>
           </div>
           <div className="sectionMobile">
             <IconButton

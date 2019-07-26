@@ -13,7 +13,6 @@ class NotFound extends Component {
           <div id="FourOFour">
             <p>404</p>
             <p id="FoFText">Sorry we can't find that page.</p>
-
             <NavLink id="return-button" to="/">
               Return Home
             </NavLink>

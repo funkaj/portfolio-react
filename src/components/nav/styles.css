@@ -3,12 +3,20 @@ li > .active {
 	font-size: +110%;
 }
 
-#home,
-#illustration,
-#web-development {
+.navLink-btn {
+	padding: 1rem;
 	text-decoration: none;
 	font-size: 1rem;
 	color: rgba(248, 255, 241, 0.466);
+	border-radius: 2px;
+}
+.active {
+	color: white;
+	font-size: +110%;
+}
+.navLink-btn:hover {
+	background-color: rgba(37, 29, 44, 0.171);
+	color: rgba(255, 255, 255, 0.781);
 }
 
 .menuBg {

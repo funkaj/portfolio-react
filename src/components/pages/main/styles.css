@@ -10,25 +10,25 @@ html {
 	padding-top: 40vh;
 	padding-bottom: 0px;
 	margin-right: 15vw;
-
 	font-family: 'Marcellus SC', serif;
 }
+
 .name {
 	z-index: 100;
 	color: rgb(233, 233, 233);
 	font-size: 12rem;
 }
+
 #mainImg {
 	position: relative;
 	width: 100%;
 }
+
 #mainImg > div > img {
 	position: absolute;
-	/* Full height */
 	height: 95vh;
 	width: 100%;
 	background-position: 50% 50%;
-	/* Center and scale the image nicely */
 	background-position: center;
 	background-repeat: no-repeat;
 	background: rgb(80, 138, 83);

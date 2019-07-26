@@ -1,14 +1,15 @@
 import React from "react";
-import PropTypes from "prop-types";
 import { compose } from "redux";
-import { withStyles } from "@material-ui/core/styles";
-import withWidth, { isWidthDown } from "@material-ui/core/withWidth";
 import GridList from "@material-ui/core/GridList";
 import GridListTile from "@material-ui/core/GridListTile";
 import GridListTileBar from "@material-ui/core/GridListTileBar";
 import IconButton from "@material-ui/core/IconButton";
-import LazyLoad from "react-lazy-load";
+import PropTypes from "prop-types";
+import { withStyles } from "@material-ui/core/styles";
+import withWidth, { isWidthDown } from "@material-ui/core/withWidth";
+
 import ImageLoader from "../animation/imageloader";
+import LazyLoad from "react-lazy-load";
 
 import "./styles.css";
 

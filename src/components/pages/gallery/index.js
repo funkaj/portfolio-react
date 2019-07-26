@@ -1,35 +1,26 @@
 import React, { Component } from "react";
-import Animation from "../../animation/stripes";
+
 import AdvancedGridList from "../../grid";
+import Animation from "../../animation/stripes";
+import { devData } from "../../data/devData";
+import { illustrationData } from "../../data/illustrationData";
 import Layout from "../layout";
 import "./styles.css";
-import { illustrationData } from "../../data/illustrationData";
-import { devData } from "../../data/devData";
 
-// Layout for all components
-
+// Gallery component
 class Gallery extends Component {
   state = {
+    data: "",
+    hasWebP: false,
     images: "",
-    pageLink: "illustration",
-    hasWebP: true,
     load: false,
-    data: illustrationData,
-    value: 0,
-    title: "Illustration"
+    pageLink: "",
+    title: "",
+    value: 0
   };
-  // state = {
-  //   images: "",
-  //   pageLink: "",
-  //   hasWebP: false,
-  //   load: false,
-  //   data: "",
-  //   value: 0,
-  //   title: ""
-  // };
   componentWillMount() {
     const state = this.state;
-    // to see if feature is availible in browser
+    // to see if webp feature is availible in browser. Then set state
     // eslint-disable-next-line no-unused-vars
     function checkImg() {
       let img = new Image();
@@ -42,7 +33,7 @@ class Gallery extends Component {
       img.src = "http://www.gstatic.com/webp/gallery/1.webp";
     }
     checkImg();
-
+    // ensure the correct state by checking the hash route when component mounts for the first time
     function getRoute(e) {
       if (e === "#/gallery/illustration") {
         state.load = false;
@@ -62,7 +53,7 @@ class Gallery extends Component {
   handleLink = (event, value) => {
     this.setState({ value });
   };
-
+  // Switch gallery images between web-development and illustration by updating state
   handleSwitch = e => {
     let route = window.location.hash;
     if (route === "#/gallery/illustration") {

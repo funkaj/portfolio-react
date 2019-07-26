@@ -1,7 +1,9 @@
 import React from "react";
+
 import MyIcon from "../icon/icons";
 import "./styles.css";
 
+// Side nav to Github, linkedin, and email
 export default function contact(props) {
   return (
     <div id="icon-container">

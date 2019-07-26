@@ -1,15 +1,16 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
 import IconButton from "@material-ui/core/IconButton";
 import Menu from "@material-ui/core/Menu";
 import MenuItem from "@material-ui/core/MenuItem";
+import { NavLink } from "react-router-dom";
 import PropTypes from "prop-types";
 import { withStyles } from "@material-ui/core/styles";
+
 import AppBar from "@material-ui/core/AppBar";
-import Toolbar from "@material-ui/core/Toolbar";
-import Typography from "@material-ui/core/Typography";
 import Button from "@material-ui/core/Button";
 import MoreIcon from "@material-ui/icons/MoreVert";
+import Toolbar from "@material-ui/core/Toolbar";
+import Typography from "@material-ui/core/Typography";
 import "./styles.css";
 
 // Nav component
@@ -25,7 +26,7 @@ const styles = {
     marginRight: 20
   }
 };
-
+// Top navigation for all pages
 function ButtonAppBar(props) {
   const { classes } = props;
   const [anchorEl, setAnchorEl] = React.useState(null);
@@ -33,17 +34,18 @@ function ButtonAppBar(props) {
   function handleClick(event) {
     setAnchorEl(event.currentTarget);
   }
+  function handleClose() {
+    setAnchorEl(null);
+  }
+
   function change(e) {
     setTimeout(function() {
       if (props.handleSwitch) {
         props.handleSwitch(window.location.hash);
       }
     }, 10);
-    // props.handleSwitch(e.target.href);
   }
-  function handleClose() {
-    setAnchorEl(null);
-  }
+
   const mobileMenuId = "primary-search-account-menu-mobile";
   const renderMobileMenu = (
     <div>

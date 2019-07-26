@@ -1,9 +1,11 @@
 import React, { Component } from "react";
+
 import ImageLoader from "../../animation/imageloader";
 import Layout from "../layout";
 import LazyLoad from "react-lazy-load";
 import "./styles.css";
 
+// Splash page component
 class Splash extends Component {
   render() {
     return (

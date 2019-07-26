@@ -1,20 +1,20 @@
 export const linkData = [
   {
-    name: "github",
-    type: "github",
+    icon: "fab fa-github-alt fa-2x",
     link: "https://github.com/funkaj",
-    icon: "fab fa-github-alt fa-2x"
+    name: "github",
+    type: "github"
   },
   {
-    name: "linkedIn",
-    type: "linkedIn",
+    icon: "fab fa-linkedin-in fa-2x",
     link: "https://www.linkedin.com/in/adam-funk-5831b8152/",
-    icon: "fab fa-linkedin-in fa-2x"
+    name: "linkedIn",
+    type: "linkedIn"
   },
   {
-    name: "contact",
-    type: "email",
+    icon: "fas fa-envelope fa-2x",
     link: "mailto:b.kimate@gmail.com?Subject=Hello%20Adam",
-    icon: "fas fa-envelope fa-2x"
+    name: "contact",
+    type: "email"
   }
 ];

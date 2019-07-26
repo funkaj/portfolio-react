@@ -1,0 +1,55 @@
+#FourOFour {
+	align-items: center;
+	background-color: rgba(255, 255, 255, 0.63);
+	border: 5px rgba(133, 94, 145, 0.514) solid;
+	border-radius: 10px;
+	display: flex;
+	flex-direction: column;
+	height: 50%;
+	left: 50%;
+	justify-content: center;
+	margin-left: -40%; /*half the size of width*/
+	position: absolute;
+	width: 80%;
+	top: 25%;
+	z-index: 99;
+}
+
+p {
+	font-size: 6rem;
+	margin: 2rem;
+	color: rgba(63, 63, 63, 0.897);
+}
+
+#FoFText {
+	font-size: 1.8rem;
+	margin-bottom: 3rem;
+}
+
+.FoFWrapper {
+	min-width: 100vw;
+	min-height: 100vh;
+	background-color: rgba(195, 188, 199, 0.445);
+}
+
+#return-button {
+	width: 30vw;
+	padding: 1rem;
+	background-color: rgba(109, 122, 96, 0.438);
+	border: 1px solid rgb(109, 122, 96);
+	border-radius: 5px;
+}
+
+#return-button > a {
+	color: rgba(48, 47, 47, 0.774);
+	text-decoration: none;
+}
+
+#return-button:hover {
+	background-color: rgba(109, 122, 96, 0.904);
+	border: 1px solid rgb(48, 58, 38);
+}
+
+#return-button:hover > a {
+	color: rgba(243, 241, 241, 0.952);
+}

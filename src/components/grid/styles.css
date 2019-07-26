@@ -1,24 +1,24 @@
-.link-btn {
-    font-size: 1rem !important;
-    color: rgba(248, 255, 241, 0.849) !important;
-}
-
 .grid-bg {
-    background-color: transparent !important;
+	background-color: transparent !important;
 }
 
 .gallery {
-    list-style: none;
-    padding: 15px;
+	list-style: none;
+	padding: 15px;
 }
 
 .lazyGrid {
-    width: 100%;
-    background: rgba(55, 65, 56, 0.52);
+	width: 100%;
+	background: rgba(55, 65, 56, 0.52);
 }
 
 .lazyGrid > div > img {
-    width: 100%;
-    height: -webkit-fill-available;
-    object-fit: cover;
+	width: 100%;
+	height: -webkit-fill-available;
+	object-fit: cover;
+}
+
+.link-btn {
+	font-size: 1rem !important;
+	color: rgba(248, 255, 241, 0.849) !important;
 }

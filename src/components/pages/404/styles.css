@@ -38,18 +38,13 @@ p {
 	background-color: rgba(109, 122, 96, 0.438);
 	border: 1px solid rgb(109, 122, 96);
 	border-radius: 5px;
-}
-
-#return-button > a {
 	color: rgba(48, 47, 47, 0.774);
 	text-decoration: none;
+	text-align: center;
 }
 
 #return-button:hover {
 	background-color: rgba(109, 122, 96, 0.904);
 	border: 1px solid rgb(48, 58, 38);
-}
-
-#return-button:hover > a {
 	color: rgba(243, 241, 241, 0.952);
 }

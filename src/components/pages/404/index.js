@@ -14,9 +14,9 @@ class NotFound extends Component {
             <p>404</p>
             <p id="FoFText">Sorry we can't find that page.</p>
 
-            <button id="return-button">
-              <NavLink to="/">Return Home</NavLink>
-            </button>
+            <NavLink id="return-button" to="/">
+              Return Home
+            </NavLink>
           </div>
         </div>
       </div>

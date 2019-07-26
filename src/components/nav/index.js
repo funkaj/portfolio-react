@@ -57,39 +57,39 @@ function ButtonAppBar(props) {
         onClose={handleClose}
       >
         <div>
-          <MenuItem className="menuBg" onClick={handleClose}>
-            <NavLink
-              exact
-              id="home"
-              className="HOME"
-              activeClassName="active"
-              to="/"
-            >
+          <NavLink
+            exact
+            id="home"
+            className="mobile-navLink-btn"
+            activeClassName="active"
+            to="/"
+          >
+            <MenuItem className="menuBg" onClick={handleClose}>
               Home
-            </NavLink>
-          </MenuItem>
-          <MenuItem className="menuBg" onClick={handleClose}>
-            <NavLink
-              id="illustration"
-              className="ILL_DATA"
-              activeClassName="active"
-              to="/gallery/illustration"
-              onClick={change}
-            >
+            </MenuItem>
+          </NavLink>
+          <NavLink
+            id="illustration"
+            className="mobile-navLink-btn"
+            activeClassName="active"
+            to="/gallery/illustration"
+            onClick={change}
+          >
+            <MenuItem className="menuBg" onClick={handleClose}>
               Illustration
-            </NavLink>
-          </MenuItem>
-          <MenuItem className="menuBg" onClick={handleClose}>
-            <NavLink
-              id="web-development"
-              className="DEV_DATA"
-              activeClassName="active"
-              to="/gallery/web-development"
-              onClick={change}
-            >
+            </MenuItem>
+          </NavLink>
+          <NavLink
+            id="web-development"
+            className="mobile-navLink-btn"
+            activeClassName="active"
+            to="/gallery/web-development"
+            onClick={change}
+          >
+            <MenuItem className="menuBg" onClick={handleClose}>
               Web Development
-            </NavLink>
-          </MenuItem>
+            </MenuItem>
+          </NavLink>
         </div>
       </Menu>
       {/* mobile end */}

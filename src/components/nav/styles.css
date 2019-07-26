@@ -48,6 +48,18 @@ li > .active {
 	font-family: 'Marcellus SC', serif;
 	color: rgb(248, 255, 241);
 }
+/* mobile */
+
+.mobile-navLink-btn {
+	text-decoration: none;
+}
+
+.mobile-navLink-btn > li {
+	color: rgb(214, 212, 212);
+}
+/* .mobile-navLink-btn + .active {
+	color: rgb(255, 253, 253);
+} */
 
 @media only screen and (max-width: 1300px) {
 	.sectionDesktop {

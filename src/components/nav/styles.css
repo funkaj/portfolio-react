@@ -57,9 +57,10 @@ li > .active {
 .mobile-navLink-btn > li {
 	color: rgb(214, 212, 212);
 }
-/* .mobile-navLink-btn + .active {
+.active > li {
 	color: rgb(255, 253, 253);
-} */
+	font-size: +110%;
+}
 
 @media only screen and (max-width: 1300px) {
 	.sectionDesktop {

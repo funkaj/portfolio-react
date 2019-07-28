@@ -55,7 +55,7 @@ function AdvancedGridList(props) {
 
     return 3;
   };
-
+  console.log(props.hasWebP);
   return (
     <div className={`grid-bg ${classes.root}`}>
       <GridList
@@ -74,7 +74,7 @@ function AdvancedGridList(props) {
             <div className="lazyGrid">
               <LazyLoad debounce={false} width={640}>
                 <ImageLoader
-                  src={props.hasWebP ? tile.imgalt : tile.img}
+                  src={!props.hasWebP ? tile.imgalt : tile.img}
                   alt={tile.title}
                 />
               </LazyLoad>

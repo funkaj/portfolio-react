@@ -25,9 +25,11 @@ class Gallery extends Component {
     function checkImg() {
       let img = new Image();
       img.onload = function() {
+        console.log("chrome is better!");
         state.hasWebP = true;
       };
       img.onerror = function() {
+        console.log("IE made it!");
         state.hasWebP = false;
       };
       img.src = "http://www.gstatic.com/webp/gallery/1.webp";

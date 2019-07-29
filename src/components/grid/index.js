@@ -55,7 +55,7 @@ function AdvancedGridList(props) {
 
     return 3;
   };
-  console.log(props.hasWebP);
+
   return (
     <div className={`grid-bg ${classes.root}`}>
       <GridList

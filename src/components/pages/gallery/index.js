@@ -11,30 +11,31 @@ import "./styles.css";
 class Gallery extends Component {
   state = {
     data: "",
-    hasWebP: false,
+    hasWebP: true,
     images: "",
     load: false,
     pageLink: "",
     title: "",
     value: 0
   };
+
   componentWillMount() {
     const state = this.state;
+
     // to see if webp feature is availible in browser. Then set state
     // eslint-disable-next-line no-unused-vars
     function checkImg() {
       let img = new Image();
       img.onload = function() {
-        console.log("chrome is better!");
         state.hasWebP = true;
       };
       img.onerror = function() {
-        console.log("IE made it!");
         state.hasWebP = false;
       };
       img.src = "http://www.gstatic.com/webp/gallery/1.webp";
     }
     checkImg();
+
     // ensure the correct state by checking the hash route when component mounts for the first time
     function getRoute(e) {
       if (e === "#/gallery/illustration") {

@@ -9,13 +9,16 @@
 
 .lazyGrid {
 	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 	background: rgba(55, 65, 56, 0.52);
 }
 
 .lazyGrid > div > img {
 	width: 100%;
 	height: -webkit-fill-available;
-	object-fit: cover;
+	/* object-fit: cover; */
 }
 
 .link-btn {

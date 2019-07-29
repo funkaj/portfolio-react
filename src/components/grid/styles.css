@@ -18,7 +18,7 @@
 .lazyGrid > div > img {
 	width: 100%;
 	height: -webkit-fill-available;
-	/* object-fit: cover; */
+	object-fit: cover;
 }
 
 .link-btn {

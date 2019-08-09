@@ -50,7 +50,7 @@ function AdvancedGridList(props) {
       return 2;
     }
     if (isWidthDown("md", props.width)) {
-      return 3;
+      return 2;
     }
 
     return 3;
@@ -64,7 +64,8 @@ function AdvancedGridList(props) {
         spacing={8}
         className={`${classes.gridList} griddy`}
       >
-        {tileData.slice(0, 6).map(tile => (
+        {/* slice tiledata array size based on screen height, then map array */}
+        {tileData.slice(0, window.innerHeight <= 1200 ? 6 : 9).map(tile => (
           <GridListTile
             className="gallery"
             key={tile.img}

@@ -23,3 +23,11 @@ html {
 		max-width: 95vw;
 	}
 }
+@media only screen and (max-width: 599px) {
+	#wrapper {
+		margin: 5rem auto;
+		margin-top: 2rem;
+		min-width: 100vw;
+		padding: 0px;
+	}
+}

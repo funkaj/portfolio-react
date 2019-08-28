@@ -55,4 +55,7 @@ html {
 	.name {
 		display: none;
 	}
+	.title {
+		display: none;
+	}
 }

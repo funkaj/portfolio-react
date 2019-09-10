@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-
 import ImageLoader from "../../animation/imageloader";
 import Layout from "../layout";
 import LazyLoad from "react-lazy-load";
@@ -15,10 +14,10 @@ class Splash extends Component {
           <LazyLoad>
             <ImageLoader src="images/jpg/ninja1.jpg" alt="ninja" />
           </LazyLoad>
-
           <div id="brand">
             <div className="name">Adam</div>
             <div className="name">Funk</div>
+            <div className="title">Illustrator / Web Development</div>
           </div>
         </div>
       </div>

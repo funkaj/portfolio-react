@@ -19,6 +19,12 @@ html {
 	font-size: 12rem;
 }
 
+.title {
+	z-index: 100;
+	font-size: 2rem;
+	color: rgb(233, 233, 233);
+}
+
 #mainImg {
 	position: relative;
 	width: 100%;
@@ -47,6 +53,9 @@ html {
 
 @media only screen and (max-width: 760px) {
 	.name {
+		display: none;
+	}
+	.title {
 		display: none;
 	}
 }

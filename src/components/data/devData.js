@@ -48,7 +48,19 @@ export const devData = [
     title: "Dynamite Kitchen Supplies"
   },
   {
-    author: "Adam, Jesse",
+    author: "Adam Funk",
+    description:
+      "A tool to collect all the news, fiction, and resources for Legends of the Five Rings from FFG. Consolidating it into one feed for me.",
+    featured: false,
+    icon: "fab fa-linkedin-in fa-lg",
+    img: "/images/webp/L5R.webp",
+    imgalt: "/images/png/L5R.png",
+    link: "https://l5rscrapper.herokuapp.com/",
+    live: "https://github.com/funkaj/l5rnews",
+    title: "L5R News"
+  },
+  {
+    author: "Adam",
     description: "A NodeJS terminal based fighting game.",
     icon: "fab fa-linkedin-in fa-lg",
     img: "/images/gif/raccoon-demo.gif",
@@ -59,7 +71,7 @@ export const devData = [
   },
 
   {
-    author: "Adam, Jesse",
+    author: "Adam",
     description:
       "Web page that searches the Giphy API for user queryed gif. Built for practice using API in web development.",
     icon: "fab fa-linkedin-in fa-lg",
@@ -70,7 +82,7 @@ export const devData = [
     title: "Gifapalooza"
   },
   {
-    author: "Adam, Jesse",
+    author: "Adam",
     description:
       "A full-stack site will take in results from your users surveys, then compare their answers with those stored in an array. The app will then display the name and picture of the user with the best overall match, and add the user to the array for future visits.",
     featured: false,
@@ -82,7 +94,7 @@ export const devData = [
     title: "Friend Finder"
   },
   {
-    author: "Adam, Jesse",
+    author: "Adam",
     description:
       "LIRI is a Language Interpretation and Recognition Interface. LIRI will be a command line node app that takes in parameters and gives you back data.",
     icon: "fab fa-linkedin-in fa-lg",

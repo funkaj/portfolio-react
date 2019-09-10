@@ -62,5 +62,13 @@ export const illustrationData = [
     img: "/images/webp/kimono1.webp",
     imgalt: "/images/png/kimono1.png",
     title: "Kimono"
+  },
+  {
+    art: true,
+    author: "Adam",
+    featured: false,
+    img: "/images/webp/Dreamland.webp",
+    imgalt: "/images/png/Dreamland.png",
+    title: "Gyles"
   }
 ];

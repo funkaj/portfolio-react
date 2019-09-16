@@ -41,6 +41,14 @@ function Footer(props) {
           />
         }
       />
+      <BottomNavigationAction
+        label="Resume"
+        icon={
+          <MyIcon id="bottomResume" linkData={props.linkData[3]}>
+            <span className="icon-title">Resume</span>
+          </MyIcon>
+        }
+      />
     </BottomNavigation>
   );
 }

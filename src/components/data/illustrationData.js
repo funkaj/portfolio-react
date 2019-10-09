@@ -11,9 +11,9 @@ export const illustrationData = [
     art: true,
     author: "Adam",
     featured: false,
-    img: "/images/gif/Anger_1_adam.gif",
-    imgalt: "/images/gif/Anger_1_adam.gif",
-    title: "Anger"
+    img: "/images/webp/Dreamland.webp",
+    imgalt: "/images/png/Dreamland.png",
+    title: "Gyles"
   },
   {
     art: true,
@@ -22,6 +22,30 @@ export const illustrationData = [
     img: "/images/webp/rufus1.webp",
     imgalt: "/images/png/rufus1.png",
     title: "Rufus"
+  },
+  {
+    art: true,
+    author: "Adam",
+    featured: false,
+    img: "/images/webp/riddle1.webp",
+    imgalt: "/images/png/riddle1.png",
+    title: "The Riddler"
+  },
+  {
+    art: true,
+    author: "Adam",
+    featured: false,
+    img: "/images/gif/Anger_1_adam.gif",
+    imgalt: "/images/gif/Anger_1_adam.gif",
+    title: "Anger"
+  },
+  {
+    art: true,
+    author: "Adam Funk",
+    featured: false,
+    img: "/images/webp/girlcolor1.webp",
+    imgalt: "/images/png/girlcolor1.png",
+    title: "Watercolor"
   },
   {
     art: true,
@@ -41,34 +65,10 @@ export const illustrationData = [
   },
   {
     art: true,
-    author: "Adam Funk",
-    featured: false,
-    img: "/images/webp/girlcolor1.webp",
-    imgalt: "/images/png/girlcolor1.png",
-    title: "Watercolor"
-  },
-  {
-    art: true,
-    author: "Adam",
-    featured: false,
-    img: "/images/webp/riddle1.webp",
-    imgalt: "/images/png/riddle1.png",
-    title: "The Riddler"
-  },
-  {
-    art: true,
     author: "Adam",
     featured: false,
     img: "/images/webp/kimono1.webp",
     imgalt: "/images/png/kimono1.png",
     title: "Kimono"
-  },
-  {
-    art: true,
-    author: "Adam",
-    featured: false,
-    img: "/images/webp/Dreamland.webp",
-    imgalt: "/images/png/Dreamland.png",
-    title: "Gyles"
   }
 ];

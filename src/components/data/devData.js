@@ -1,5 +1,29 @@
 export const devData = [
   {
+    author: "Adam Funk",
+    description:
+      "A Online 2-player browser based game. Players take turns choosing 1 of 4 numbers hidden under crystals. Their score and the total update. The numbers under the crystals do not change, but will remain hidden. So try and remember where they are. Once a player selection breaks the target number that player losses and the game ends.",
+    featured: false,
+    icon: "fab fa-linkedin-in fa-lg",
+    img: "/images/webp/crystalMadness.webp",
+    imgalt: "/images/png/crystalMadness.png",
+    link: "https://github.com/funkaj/crystalgame",
+    live: "https://crystal-madness.herokuapp.com",
+    title: "Crystal Madness"
+  },
+  {
+    author: "Adam Funk",
+    description:
+      "A npm package that will return a random name of a crystal. I made this for use with the game Crystal Madness. I wanted a easy way to reuse the functionality in other apps as it may come up. I took the opportunity to learn the dev environment for npm.",
+    featured: false,
+    icon: "fab fa-linkedin-in fa-lg",
+    img: "/images/webp/random-crystal-generator.webp",
+    imgalt: "/images/png/random-crystal-generator.png",
+    link: "https://github.com/funkaj/random-crystal-generator",
+    live: "https://www.npmjs.com/package/random-crystal-generator",
+    title: "Random Crystal Name Generator"
+  },
+  {
     author: "SDTH",
     description:
       "I have contributed CSS refactoring to this open source project. San Diego Tech Hub represents a movement aimed at changing the perception of the San Diego tech ecosystem. Our focus is to be a conduit for change connecting businesses, organizations, and individuals, leveraging their resources and talents to build a stronger San Diego tech community through collaboration.",
@@ -22,18 +46,6 @@ export const devData = [
     link: "https://github.com/ScriptKiddie1337/JobPiper.io",
     live: "http://www.jobpiper.io/",
     title: "Job Piper"
-  },
-  {
-    author: "Adam Funk",
-    description:
-      "A matching game made for UCSD Bootcamp. User is given a random target number (between 19-120) to meet not exceed. The four crystals are given random numbers(between 1-12) with no duplicates. User must click on crystals to update Player Total and remember what the number under each crystal is. If they meet the target they win, if they go over they lose. Win/Lose counter updates and A new Target Number/Crystals are selected. Player continues for as long as they like.",
-    featured: false,
-    icon: "fab fa-linkedin-in fa-lg",
-    img: "/images/webp/crystalGame.webp",
-    imgalt: "/images/png/crystalGame.png",
-    link: "https://github.com/funkaj/Crystal-Madness",
-    live: "https://funkaj.github.io/Crystal-Madness/",
-    title: "Crystal Madness"
   },
   {
     author: "Adam, Jesse",
@@ -115,5 +127,17 @@ export const devData = [
     link: "https://github.com/funkaj/TheDestinator",
     live: "https://loftusjl.github.io/TheDestinator/",
     title: "The-Destinator"
+  },
+  {
+    author: "Adam Funk",
+    description:
+      "A matching game made for UCSD Bootcamp. User is given a random target number (between 19-120) to meet not exceed. The four crystals are given random numbers(between 1-12) with no duplicates. User must click on crystals to update Player Total and remember what the number under each crystal is. If they meet the target they win, if they go over they lose. Win/Lose counter updates and A new Target Number/Crystals are selected. Player continues for as long as they like.",
+    featured: false,
+    icon: "fab fa-linkedin-in fa-lg",
+    img: "/images/webp/crystalGame.webp",
+    imgalt: "/images/png/crystalGame.png",
+    link: "https://github.com/funkaj/Crystal-Madness",
+    live: "https://funkaj.github.io/Crystal-Madness/",
+    title: "Crystal Madness"
   }
 ];

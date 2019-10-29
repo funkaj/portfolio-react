@@ -8,7 +8,7 @@ export const devData = [
     imgalt: "/images/png/FFCC.png",
     link: "https://github.com/funkaj/Crystal-Madness",
     live: "https://funkaj.github.io/Crystal-Madness/",
-    title: "Crystal Madness"
+    title: "Funk Family Child Care"
   },
   {
     author: "Adam Funk",

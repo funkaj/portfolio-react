@@ -1,6 +1,17 @@
 export const devData = [
   {
     author: "Adam Funk",
+    description: "Day care business site.",
+    featured: false,
+    icon: "fab fa-linkedin-in fa-lg",
+    img: "/images/webp/FFCC.webp",
+    imgalt: "/images/png/FFCC.png",
+    link: "https://github.com/funkaj/Crystal-Madness",
+    live: "https://funkaj.github.io/Crystal-Madness/",
+    title: "Crystal Madness"
+  },
+  {
+    author: "Adam Funk",
     description:
       "A Online 2-player browser based game. Players take turns choosing 1 of 4 numbers hidden under crystals. Their score and the total update. The numbers under the crystals do not change, but will remain hidden. So try and remember where they are. Once a player selection breaks the target number that player losses and the game ends.",
     featured: false,

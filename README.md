@@ -21,7 +21,7 @@ A step by step series of examples that tell you how to get a development env run
   - Ensure all the Prerequisites are installed on your system
 
 - Clone Repo - Copy the link in the clone repo button on github
-  <img src="/public/images/png/clone.png" />
+  - ![Image of Clone Button](./public/images/png/clone.png =150px)
 
 <!--
 ## Deployment

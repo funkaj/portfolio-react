@@ -6,8 +6,8 @@ export const devData = [
     icon: "fab fa-linkedin-in fa-lg",
     img: "/images/webp/FFCC.webp",
     imgalt: "/images/png/FFCC.png",
-    link: "https://github.com/funkaj/Crystal-Madness",
-    live: "https://funkaj.github.io/Crystal-Madness/",
+    link: "https://github.com/funkaj/funk-family-daycare",
+    live: "https://funk-family-childcare.netlify.com/",
     title: "Funk Family Child Care"
   },
   {
@@ -18,8 +18,8 @@ export const devData = [
     icon: "fab fa-linkedin-in fa-lg",
     img: "/images/webp/crystalMadness.webp",
     imgalt: "/images/png/crystalMadness.png",
-    link: "https://github.com/funkaj/crystalgame",
-    live: "https://crystal-madness.herokuapp.com",
+    link: "https://github.com/funkaj/crystal-madness-socketio",
+    live: "https://crystal-madness-2.herokuapp.com/",
     title: "Crystal Madness"
   },
   {
@@ -55,7 +55,7 @@ export const devData = [
     img: "/images/gif/jobpiper.gif",
     imgalt: "/images/gif/jobpiper.gif",
     link: "https://github.com/ScriptKiddie1337/JobPiper.io",
-    live: "http://www.jobpiper.io/",
+    live: "https://job-piper.herokuapp.com/",
     title: "Job Piper"
   },
   {

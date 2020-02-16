@@ -73,12 +73,14 @@ function AdvancedGridList(props) {
             rows={tile.featured ? 2 : 1}
           >
             <div className="lazyGrid">
-              <LazyLoad debounce={false} width={640}>
-                <ImageLoader
-                  src={!props.hasWebP ? tile.imgalt : tile.img}
-                  alt={tile.title}
-                />
-              </LazyLoad>
+              <a href={tile.live}>
+                <LazyLoad debounce={false} width={640}>
+                  <ImageLoader
+                    src={!props.hasWebP ? tile.imgalt : tile.img}
+                    alt={tile.title}
+                  />
+                </LazyLoad>
+              </a>
             </div>
             <GridListTileBar
               title={tile.art ? tile.title : null}

@@ -14,7 +14,7 @@
 		"react-image-lightbox": "^5.1.1",
 		"react-lazy-load": "^3.0.13",
 		"react-router-dom": "^5.1.2",
-		"react-scripts": "^3.4.0",
+		"react-scripts": "^5.0.1",
 		"redux": "^4.0.5",
 		"routing": "^0.0.2",
 		"tar": "^4.4.13"

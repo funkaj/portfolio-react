@@ -2,7 +2,6 @@ body,
 html {
 	height: 100%;
 }
-
 #brand {
 	display: flex;
 	text-align: right;
@@ -32,7 +31,8 @@ html {
 
 #mainImg > div > img {
 	position: absolute;
-	height: 95vh;
+	height: calc(100vh - 136px);
+	min-height: calc(100vh - 64px);
 	width: 100%;
 	background-position: 50% 50%;
 	background-position: center;

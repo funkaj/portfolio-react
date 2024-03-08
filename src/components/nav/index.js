@@ -15,15 +15,15 @@ import "./styles.css";
 // Nav component
 const styles = {
   root: {
-    flexGrow: 1
+    flexGrow: 1,
   },
   grow: {
-    flexGrow: 1
+    flexGrow: 1,
   },
   menuButton: {
     marginLeft: -12,
-    marginRight: 20
-  }
+    marginRight: 20,
+  },
 };
 // Top navigation for all pages
 function ButtonAppBar(props) {
@@ -38,8 +38,9 @@ function ButtonAppBar(props) {
   }
 
   function change(e) {
-    setTimeout(function() {
+    setTimeout(function () {
       if (props.handleSwitch) {
+        console.log("hsh");
         props.handleSwitch(window.location.hash);
       }
     }, 10);
@@ -60,7 +61,7 @@ function ButtonAppBar(props) {
           <NavLink
             exact
             id="home"
-            className="mobile-navLink-btn"
+            className="mobile-navLink-btn navigation"
             activeClassName="active"
             to="/"
           >
@@ -90,6 +91,17 @@ function ButtonAppBar(props) {
               Web Development
             </MenuItem>
           </NavLink>
+          <NavLink
+            id="contact-navigation"
+            className="mobile-navLink-btn"
+            activeClassName="active"
+            to="/contact"
+            onClick={change}
+          >
+            <MenuItem className="menuBg" onClick={handleClose}>
+              Contact Us
+            </MenuItem>
+          </NavLink>
         </div>
       </Menu>
       {/* mobile end */}
@@ -97,10 +109,12 @@ function ButtonAppBar(props) {
   );
   return (
     <div className={classes.root}>
-      <AppBar id="navBar" position="static">
+      <AppBar id="navBar" className="plaid" position="static">
         <Toolbar className="navLink">
           <Typography id="title" variant="h3" className={classes.grow}>
-            Adam Funk
+            <NavLink exact className="navLink-title" to="/">
+              Adam Funk
+            </NavLink>
           </Typography>
           <div className="sectionDesktop">
             <NavLink
@@ -150,7 +164,7 @@ function ButtonAppBar(props) {
 }
 
 ButtonAppBar.propTypes = {
-  classes: PropTypes.object.isRequired
+  classes: PropTypes.object.isRequired,
 };
 
 export default withStyles(styles)(ButtonAppBar);

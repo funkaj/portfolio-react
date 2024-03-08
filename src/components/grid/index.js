@@ -8,35 +8,32 @@ import PropTypes from "prop-types";
 import { withStyles } from "@material-ui/core/styles";
 import withWidth, { isWidthDown } from "@material-ui/core/withWidth";
 
-import ImageLoader from "../animation/imageloader";
-import LazyLoad from "react-lazy-load";
-
 import "./styles.css";
 
 // Component to buld the galleries grid and insert data
-const styles = theme => ({
+const styles = (theme) => ({
   root: {
     display: "flex",
     flexWrap: "wrap",
     justifyContent: "space-around",
     overflow: "hidden",
-    backgroundColor: theme.palette.background.paper
+    backgroundColor: theme.palette.background.paper,
   },
   gridList: {
     // Promote the list into his own layer on Chrome. This cost memory but helps keeping high FPS.
-    transform: "translateZ(0)"
+    transform: "translateZ(0)",
   },
   titleBar: {
     background:
-      "linear-gradient(to bottom, rgba(0,0,0,0.7) 0%, " +
-      "rgba(0,0,0,0.3) 70%, rgba(0,0,0,0) 100%)"
+      "linear-gradient(to top, rgba(0,0,0,0.7) 0%, " +
+      "rgba(0,0,0,0.3) 70%, rgba(0,0,0,0) 100%)",
   },
   icon: {
-    color: "white"
-  }
+    color: "white",
+  },
 });
 
-//function to check screen width and alter number of xolums in the grid
+//function to check screen width and alter number of columns in the grid
 function AdvancedGridList(props) {
   const { classes } = props;
 
@@ -50,7 +47,7 @@ function AdvancedGridList(props) {
       return 2;
     }
     if (isWidthDown("md", props.width)) {
-      return 2;
+      return 3;
     }
 
     return 3;
@@ -65,7 +62,7 @@ function AdvancedGridList(props) {
         className={`${classes.gridList} griddy`}
       >
         {/* slice tiledata array size based on screen height, then map array */}
-        {tileData.slice(0, window.innerHeight <= 1200 ? 6 : 9).map(tile => (
+        {tileData.slice(0, window.innerHeight <= 1200 ? 6 : 9).map((tile) => (
           <GridListTile
             className="gallery"
             key={tile.img}
@@ -73,18 +70,16 @@ function AdvancedGridList(props) {
             rows={tile.featured ? 2 : 1}
           >
             <a href={tile.live}>
-              <div className="lazyGrid">
-                <LazyLoad debounce={false} width={640}>
-                  <ImageLoader
-                    src={!props.hasWebP ? tile.imgalt : tile.img}
-                    alt={tile.title}
-                  />
-                </LazyLoad>
+              <div>
+                <img
+                  src={!props.hasWebP ? tile.imgalt : tile.img}
+                  alt={tile.title}
+                />
               </div>
             </a>
             <GridListTileBar
               title={tile.art ? tile.title : null}
-              titlePosition="top"
+              titlePosition="bottom"
               actionIcon={
                 <div>
                   {tile.art ? (
@@ -120,10 +115,7 @@ function AdvancedGridList(props) {
 }
 
 AdvancedGridList.propTypes = {
-  classes: PropTypes.object.isRequired
+  classes: PropTypes.object.isRequired,
 };
 
-export default compose(
-  withStyles(styles),
-  withWidth()
-)(AdvancedGridList);
+export default compose(withStyles(styles), withWidth())(AdvancedGridList);

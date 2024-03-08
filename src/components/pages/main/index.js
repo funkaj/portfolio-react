@@ -1,7 +1,8 @@
 import React, { Component } from "react";
 import ImageLoader from "../../animation/imageloader";
-import Layout from "../layout";
+// import Layout from "../layout";
 import LazyLoad from "react-lazy-load";
+import { Helmet } from "react-helmet";
 import "./styles.css";
 
 // Splash page component
@@ -9,11 +10,23 @@ class Splash extends Component {
   render() {
     return (
       <div>
-        <Layout />
+        <Helmet>
+          <meta charSet="utf-8" />
+          <title>Adam Funk Art</title>
+          <meta
+            name="keywords"
+            content="adam, funk, art, illustration, frontend, web development, magento, magento 2, react, nodejs"
+          />
+          <meta
+            name="description"
+            content="Web develoment and illustration by Adam Funk."
+          />
+        </Helmet>
+        {/* <Layout /> */}
         <div id="mainImg">
           <LazyLoad>
             <ImageLoader
-              src="images/jpg/ninja1.jpg"
+              src={process.env.PUBLIC_URL + "/images/jpg/ninja1.jpg"}
               alt="Illustration of Ninja by Adam Funk"
             />
           </LazyLoad>

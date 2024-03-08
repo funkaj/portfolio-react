@@ -3,33 +3,33 @@ export const illustrationData = [
     art: true,
     author: "Adam Funk",
     featured: false,
-    img: "/images/webp/ninja1.webp",
+    img: "/images/jpg/ninja1_thumb.jpg",
     imgalt: "/images/png/ninja1.png",
-    title: "Ninja"
+    title: "Ninja",
   },
   {
     art: true,
     author: "Adam",
     featured: false,
-    img: "/images/webp/Dreamland.webp",
+    img: "/images/jpg/Dreamland_thumb.jpg",
     imgalt: "/images/png/Dreamland.png",
-    title: "Gyles"
+    title: "Gyles",
   },
   {
     art: true,
     author: "Adam Funk",
     featured: false,
-    img: "/images/webp/rufus1.webp",
+    img: "/images/jpg/rufus1_thumb.jpg",
     imgalt: "/images/png/rufus1.png",
-    title: "Rufus"
+    title: "Rufus",
   },
   {
     art: true,
     author: "Adam",
     featured: false,
-    img: "/images/webp/riddle1.webp",
+    img: "/images/jpg/riddle1_thumb.jpg",
     imgalt: "/images/png/riddle1.png",
-    title: "The Riddler"
+    title: "The Riddler",
   },
   {
     art: true,
@@ -37,38 +37,38 @@ export const illustrationData = [
     featured: false,
     img: "/images/gif/Anger_1_adam.gif",
     imgalt: "/images/gif/Anger_1_adam.gif",
-    title: "Anger"
+    title: "Anger",
   },
   {
     art: true,
     author: "Adam Funk",
     featured: false,
-    img: "/images/webp/girlcolor1.webp",
+    img: "/images/jpg/girlcolor1_thumb.jpg",
     imgalt: "/images/png/girlcolor1.png",
-    title: "Watercolor"
+    title: "Watercolor",
   },
   {
     art: true,
     author: "Adam, Evan",
     featured: false,
-    img: "/images/webp/Gorgon_Berry_Funk1.webp",
+    img: "/images/jpg/Gorgon_Berry_Funk1_thumb.jpg",
     imgalt: "/images/png/Gorgon_Berry_Funk1.png",
-    title: "Medusa"
+    title: "Medusa",
   },
   {
     art: true,
     author: "Adam Funk",
     featured: false,
-    img: "/images/webp/Sub-Zero.webp",
+    img: "/images/jpg/Sub-Zero_thumb.jpg",
     imgalt: "/images/png/Sub-Zero.png",
-    title: "Sub Zero"
+    title: "Sub Zero",
   },
   {
     art: true,
     author: "Adam",
     featured: false,
-    img: "/images/webp/kimono1.webp",
+    img: "/images/jpg/kimono1_thumb.jpg",
     imgalt: "/images/png/kimono1.png",
-    title: "Kimono"
-  }
+    title: "Kimono",
+  },
 ];

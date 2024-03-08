@@ -4,7 +4,8 @@ import AdvancedGridList from "../../grid";
 import Animation from "../../animation/stripes";
 import { devData } from "../../data/devData";
 import { illustrationData } from "../../data/illustrationData";
-import Layout from "../layout";
+import { Helmet } from "react-helmet";
+// import Layout from "../layout";
 import "./styles.css";
 
 // Gallery component
@@ -16,7 +17,7 @@ class Gallery extends Component {
     load: false,
     pageLink: "",
     title: "",
-    value: 0
+    value: 0,
   };
 
   componentWillMount() {
@@ -26,13 +27,14 @@ class Gallery extends Component {
     // eslint-disable-next-line no-unused-vars
     function checkImg() {
       let img = new Image();
-      img.onload = function() {
-        state.hasWebP = true;
-      };
-      img.onerror = function() {
+      img.onload = function () {
+        // state.hasWebP = true;
         state.hasWebP = false;
       };
-      img.src = "http://www.gstatic.com/webp/gallery/1.webp";
+      img.onerror = function () {
+        state.hasWebP = false;
+      };
+      img.src = "https://www.gstatic.com/webp/gallery/1.webp";
     }
     checkImg();
 
@@ -57,7 +59,7 @@ class Gallery extends Component {
     this.setState({ value });
   };
   // Switch gallery images between web-development and illustration by updating state
-  handleSwitch = e => {
+  handleSwitch = (e) => {
     let route = window.location.hash;
     if (route === "#/gallery/illustration") {
       this.setState({ load: false });
@@ -77,7 +79,16 @@ class Gallery extends Component {
   render() {
     return (
       <div>
-        <Layout handleSwitch={this.handleSwitch} />
+        <Helmet>
+          <meta charSet="utf-8" />
+          <title>Adam Funk Art: {this.state.title}</title>
+          <meta
+            name="keywords"
+            content="adam, funk, frontend, web development, magento, magento 2, react, nodejs"
+          />
+          <meta name="description" content="Web develoment by Adam Funk." />
+        </Helmet>
+        {/* <Layout handleSwitch={this.handleSwitch} /> */}
         <div id="wrapper">
           <AdvancedGridList
             hasWebP={this.state.hasWebP}

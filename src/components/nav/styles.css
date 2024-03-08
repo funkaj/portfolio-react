@@ -10,7 +10,7 @@ li > .active {
 	color: rgba(248, 255, 241, 0.466);
 	border-radius: 3px;
 }
-.active {
+.active:not(.navLink-title) {
 	color: white;
 	font-size: +110%;
 }
@@ -44,9 +44,10 @@ li > .active {
 	color: rgb(248, 255, 241);
 }
 
-#title {
+#title > .navLink-title {
 	font-family: 'Marcellus SC', serif;
 	color: rgb(248, 255, 241);
+	text-decoration: none;
 }
 /* mobile */
 
@@ -75,5 +76,11 @@ li > .active {
 @media only screen and (min-width: 760px) {
 	#name {
 		display: none;
+	}
+}
+
+@media only screen and (max-width: 420px) {
+	.MuiTypography-h3 > .navLink-title {
+		font-size: 2.5rem;
 	}
 }

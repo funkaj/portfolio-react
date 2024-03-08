@@ -11,7 +11,10 @@ body {
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 }
-
+#root {
+	position: relative;
+	min-height: 100%;
+}
 .gallery > div > div > div > div {
 	color: rgba(242, 243, 242, 0.931);
 }

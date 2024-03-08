@@ -5,7 +5,7 @@ const _isLoaded = {};
 class ImageLoader extends Component {
   //initial state: image loaded stage
   state = {
-    isLoaded: _isLoaded[this.props.src]
+    isLoaded: _isLoaded[this.props.src],
   };
 
   //define our loading and loaded image classes
@@ -14,7 +14,7 @@ class ImageLoader extends Component {
     loadingClassName: "img-loading",
     loadedClassName: "img-loaded",
     alt: "",
-    noAltName: "Default-image"
+    noAltName: "Default-image",
   };
 
   //image onLoad handler to update state to loaded
@@ -39,7 +39,7 @@ class ImageLoader extends Component {
     return (
       // eslint-disable-next-line jsx-a11y/alt-text
       <img
-        src={this.props.src}
+        src={process.env.PUBLIC_URL + this.props.src}
         onClick={this.props.onClick}
         className={className}
         onLoad={this.onLoad}

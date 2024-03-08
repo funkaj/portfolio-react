@@ -2,7 +2,7 @@ import React from "react";
 import IconButton from "@material-ui/core/IconButton";
 
 // icon component
-function Icon(props) {
+function MyIcon(props) {
   const link = props.linkData;
 
   return (
@@ -14,4 +14,4 @@ function Icon(props) {
   );
 }
 
-export default Icon;
+export default MyIcon;

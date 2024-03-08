@@ -1,26 +1,69 @@
 export const devData = [
   {
     author: "Adam Funk",
-    description: "Day care business site.",
+    description:
+      "First-Aid-Product.com: First Aid Kits - America's Favorite First Aid™ First Aid &amp; First Aid Supplies Wholesale Direct to the Public for over 25 years! CPR, First Aid Supply, Survival &amp; Emergency Gear: Welcome to First-Aid-Product.com! OSHA 1st Aid, Safety + More",
     featured: false,
     icon: "fab fa-linkedin-in fa-lg",
-    img: "/images/webp/FFCC.webp",
-    imgalt: "/images/png/FFCC.png",
-    link: "https://github.com/funkaj/funk-family-daycare",
-    live: "https://funk-family-childcare.netlify.com/",
-    title: "Funk Family Child Care"
+    img: "/images/png/FAP.png",
+    imgalt: "/images/jpg/first-aid-product.jpg",
+    live: "https://first-aid-product.com/",
+    title: "First Aid Product™",
   },
   {
     author: "Adam Funk",
     description:
-      "A Online 2-player browser based game. Players take turns choosing 1 of 4 numbers hidden under crystals. Their score and the total update. The numbers under the crystals do not change, but will remain hidden. So try and remember where they are. Once a player selection breaks the target number that player losses and the game ends.",
+      "FirstAidMart.com | First Aid Kits &amp; Supplies, CPR, Disaster Survival Preparedness and Safety | FirstAidMart.com",
     featured: false,
     icon: "fab fa-linkedin-in fa-lg",
-    img: "/images/webp/crystalMadness.webp",
-    imgalt: "/images/png/crystalMadness.png",
-    link: "https://github.com/funkaj/crystal-madness-socketio",
-    live: "https://crystal-madness-2.herokuapp.com/",
-    title: "Crystal Madness"
+    img: "/images/png/FAM.png",
+    imgalt: "/images/jpg/first-aid-mart.jpg",
+    live: "https://firstaidmart.com/",
+    title: "First Aid Mart™",
+  },
+  {
+    author: "Adam Funk",
+    description:
+      "First Aid Store™ - First Aid Kits, Bags, First Aid Supplies &amp; Packs at FirstAidStore.com",
+    featured: false,
+    icon: "fab fa-linkedin-in fa-lg",
+    img: "/images/png/FAS.png",
+    imgalt: "/images/jpg/first-aid-store.jpg",
+    live: "https://first-aid-store.com/",
+    title: "First Aid Store™",
+  },
+  {
+    author: "Adam Funk",
+    description:
+      "American CPR Training® | The low cost CPR &amp; First Aid Safety Training Classes Alternative! ½ the Time, ½ the Price, and TWICE the Fun!™",
+    featured: false,
+    icon: "fab fa-linkedin-in fa-lg",
+    img: "/images/png/ACT.jpg",
+    imgalt: "/images/jpg/american-cpr-training.jpg",
+    live: "https://americancpr.com/",
+    title: "American CPR Training®",
+  },
+  {
+    author: "Adam Funk",
+    description:
+      "Urgent First Aid® | First Aid Manufacturer | The newest &amp; hottest first aid supply manufacturer. | The newest &amp; hottest first aid supply manufacturer.A Online 2-player browser based game. Players take turns choosing 1 of 4 numbers hidden under crystals. Their score and the total update. The numbers under the crystals do not change, but will remain hidden. So try and remember where they are. Once a player selection breaks the target number that player losses and the game ends.",
+    featured: false,
+    icon: "fab fa-linkedin-in fa-lg",
+    img: "/images/png/URG.png",
+    imgalt: "/images/png/URG.png",
+    live: "https://urgentfirstaid.com/",
+    title: "Urgent First Aid®",
+  },
+  {
+    author: "Adam Funk",
+    description: "Day care business site.",
+    featured: false,
+    icon: "fab fa-linkedin-in fa-lg",
+    img: "/images/jpg/FFCC_thumb.jpg",
+    imgalt: "/images/png/FFCC.png",
+    link: "https://github.com/funkaj/funk-family-daycare",
+    live: "https://funk-family-childcare.netlify.com/",
+    title: "Funk Family Child Care",
   },
   {
     author: "Adam Funk",
@@ -28,11 +71,11 @@ export const devData = [
       "A npm package that will return a random name of a crystal. I made this for use with the game Crystal Madness. I wanted a easy way to reuse the functionality in other apps as it may come up. I took the opportunity to learn the dev environment for npm.",
     featured: false,
     icon: "fab fa-linkedin-in fa-lg",
-    img: "/images/webp/random-crystal-generator.webp",
+    img: "/images/jpg/random-crystal-generator_thumb.jpg",
     imgalt: "/images/png/random-crystal-generator.png",
     link: "https://github.com/funkaj/random-crystal-generator",
     live: "https://www.npmjs.com/package/random-crystal-generator",
-    title: "Random Crystal Name Generator"
+    title: "Random Crystal Name Generator",
   },
   {
     author: "SDTH",
@@ -40,47 +83,33 @@ export const devData = [
       "I have contributed CSS refactoring to this open source project. San Diego Tech Hub represents a movement aimed at changing the perception of the San Diego tech ecosystem. Our focus is to be a conduit for change connecting businesses, organizations, and individuals, leveraging their resources and talents to build a stronger San Diego tech community through collaboration.",
     featured: false,
     icon: "fab fa-linkedin-in fa-lg",
-    img: "/images/webp/sdth1.webp",
+    img: "/images/jpg/sdth1_thumb.jpg",
     imgalt: "/images/png/sdth1.png",
     link: "https://github.com/san-diego-tech-hub/sdth-site",
     live: "https://www.sandiegotechhub.com/",
-    title: "San Diego Tech Hub"
-  },
-  {
-    author: "Adam Funk, Jesse Loftus, Jordon, Silver, Phillip",
-    description:
-      "JobPiper is a job assistant to make the job search process simple and easy to do. Tech Stack (MERN) MongoDB, Express.js, React.js, Node JS, ES6, HTML5, CSS3, Material UI, Material Design, Firebase, Fuse.js, Mongoose.js, Cheerio.js, Axios",
-    featured: false,
-    icon: "fab fa-linkedin-in fa-lg",
-    img: "/images/gif/jobpiper.gif",
-    imgalt: "/images/gif/jobpiper.gif",
-    link: "https://github.com/ScriptKiddie1337/JobPiper.io",
-    live: "https://job-piper.herokuapp.com/",
-    title: "Job Piper"
+    title: "San Diego Tech Hub",
   },
   {
     author: "Adam, Jesse",
     description:
       "Dynamite Kitchen Supplier (DkS) is a full-stack web-app that will allow for role based users to input orders for purchase using a restaurant kitchen as its model. The app allow's for a seperation of roles each with their own set of privileges and access. Users will need to login or create a new user which will be stored in the database.",
-    featured: false,
     icon: "fab fa-linkedin-in fa-lg",
-    img: "/images/webp/plate1.webp",
+    img: "/images/jpg/chef_thumb.jpg",
     imgalt: "/images/png/chef.png",
     link: "https://github.com/funkaj/Dynamite-Kitchen-Supplies",
     live: "https://serene-forest-68972.herokuapp.com/",
-    title: "Dynamite Kitchen Supplies"
+    title: "Dynamite Kitchen Supplies",
   },
   {
-    author: "Adam Funk",
+    author: "Adam Funk, Jesse Loftus, Jordon, Silver, Phillip",
     description:
-      "A tool to collect all the news, fiction, and resources for Legends of the Five Rings from FFG. Consolidating it into one feed for me.",
-    featured: false,
+      "JobPiper is a job assistant to make the job search process simple and easy to do. Tech Stack (MERN) MongoDB, Express.js, React.js, Node JS, ES6, HTML5, CSS3, Material UI, Material Design, Firebase, Fuse.js, Mongoose.js, Cheerio.js, Axios",
     icon: "fab fa-linkedin-in fa-lg",
-    img: "/images/webp/L5R.webp",
-    imgalt: "/images/png/L5R.png",
-    link: "https://l5rscrapper.herokuapp.com/",
-    live: "https://github.com/funkaj/l5rnews",
-    title: "L5R News"
+    img: "/images/jpg/jobpiper.gif",
+    imgalt: "/images/gif/jobpiper.gif",
+    link: "https://github.com/ScriptKiddie1337/JobPiper.io",
+    live: "https://job-piper.herokuapp.com/",
+    title: "Job Piper",
   },
   {
     author: "Adam",
@@ -90,9 +119,8 @@ export const devData = [
     imgalt: "/images/gif/raccoon-demo.gif",
     link: "https://github.com/funkaj/Raccoon-Fighter",
     live: "https://github.com/funkaj/Raccoon-Fighter",
-    title: "Raccoon Fighter!"
+    title: "Raccoon Fighter!",
   },
-
   {
     author: "Adam",
     description:
@@ -102,7 +130,7 @@ export const devData = [
     imgalt: "/images/png/gifapalooza.png",
     link: "https://github.com/funkaj/Gifapalooza",
     live: "https://funkaj.github.io/Gifapalooza/",
-    title: "Gifapalooza"
+    title: "Gifapalooza",
   },
   {
     author: "Adam",
@@ -110,11 +138,11 @@ export const devData = [
       "A full-stack site will take in results from your users surveys, then compare their answers with those stored in an array. The app will then display the name and picture of the user with the best overall match, and add the user to the array for future visits.",
     featured: false,
     icon: "fab fa-linkedin-in fa-lg",
-    img: "/images/webp/friend_finder01.webp",
+    img: "/images/jpg/friend_finder01_thumb.jpg",
     imgalt: "/images/png/friend_finder01.png",
     link: "https://github.com/funkaj/FriendFinder",
     live: "https://blooming-anchorage-67787.herokuapp.com/",
-    title: "Friend Finder"
+    title: "Friend Finder",
   },
   {
     author: "Adam",
@@ -125,7 +153,7 @@ export const devData = [
     imgalt: "/images/png/liri-node-app.png",
     link: "https://github.com/funkaj/liri-node-app",
     live: "https://github.com/funkaj/liri-node-app",
-    title: "Liri-app"
+    title: "Liri-app",
   },
   {
     author: "Adam, Jesse",
@@ -133,11 +161,11 @@ export const devData = [
       "A travel site to suggest activities located around chosen destinations. Includes attractions, lodging, and weather forecast.",
     featured: false,
     icon: "fab fa-linkedin-in fa-lg",
-    img: "/images/webp/destinator.webp",
+    img: "/images/jpg/destinator_thumb.jpg",
     imgalt: "/images/png/destinator.png",
     link: "https://github.com/funkaj/TheDestinator",
     live: "https://loftusjl.github.io/TheDestinator/",
-    title: "The-Destinator"
+    title: "The-Destinator",
   },
   {
     author: "Adam Funk",
@@ -145,10 +173,10 @@ export const devData = [
       "A matching game made for UCSD Bootcamp. User is given a random target number (between 19-120) to meet not exceed. The four crystals are given random numbers(between 1-12) with no duplicates. User must click on crystals to update Player Total and remember what the number under each crystal is. If they meet the target they win, if they go over they lose. Win/Lose counter updates and A new Target Number/Crystals are selected. Player continues for as long as they like.",
     featured: false,
     icon: "fab fa-linkedin-in fa-lg",
-    img: "/images/webp/crystalGame.webp",
+    img: "/images/jpg/crystalGame_thumb.jpg",
     imgalt: "/images/png/crystalGame.png",
     link: "https://github.com/funkaj/Crystal-Madness",
     live: "https://funkaj.github.io/Crystal-Madness/",
-    title: "Crystal Madness"
-  }
+    title: "Crystal Madness",
+  },
 ];
